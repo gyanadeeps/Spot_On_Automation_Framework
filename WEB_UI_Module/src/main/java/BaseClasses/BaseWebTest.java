@@ -46,7 +46,7 @@ public class BaseWebTest {
             DriverBinaryManager.setupWebDriverBinary();
 
             //System.out.println("Suite Name --> "+ SUITENAME);
-            System.out.println("URL Name --> " + AFDALANALYTICS_URL);
+            System.out.println("URL Name --> " + SPOT_ON_URL);
         }
 
 
@@ -78,7 +78,7 @@ public class BaseWebTest {
             ENV_PROPERTIES.put("os_name", getProperties().getProperty("os.name"));
             ENV_PROPERTIES.put("github_user_email", getProperties().getProperty("github_user_email", "Github User Email not found"));
             ENV_PROPERTIES.put("github_user_name", getProperties().getProperty("github_user_name", "Github User Name not found"));
-            ENV_PROPERTIES.put("URL", AFDALANALYTICS_URL);
+            ENV_PROPERTIES.put("URL", SPOT_ON_URL);
             ENV_PROPERTIES.putAll(((RemoteWebDriver) WebDriverRunner.getWebDriver()).getCapabilities().asMap());
         }
         SessionId sessionid = ((RemoteWebDriver) WebDriverRunner.getWebDriver()).getSessionId();

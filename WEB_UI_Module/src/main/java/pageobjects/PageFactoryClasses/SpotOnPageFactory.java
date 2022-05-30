@@ -12,4 +12,9 @@ public class SpotOnPageFactory extends PageFactory
         return wrap(new SpotOnSignInPage(), ISpotOnSignInPage.class);
     }
 
+    public static ISpotOnSignUp getSignUpPage()
+    {
+        return wrap(new SpotOnSignUp(), ISpotOnSignUp.class);
+    }
+
 }

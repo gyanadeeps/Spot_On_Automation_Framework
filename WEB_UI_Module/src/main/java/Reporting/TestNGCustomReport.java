@@ -177,7 +177,7 @@ public class TestNGCustomReport implements IReporter {
 
         writer.print("<tr>");
         writer.println("<th>Environment URL </td>");
-        writer.print("<td> "+ SystemProperties.AFDALANALYTICS_URL +" </td>");
+        writer.print("<td> "+ SystemProperties.SPOT_ON_URL +" </td>");
         writer.print("</tr>");
         writer.print("<tr>");
         writer.println("<th>Browser</td>");

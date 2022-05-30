@@ -10,25 +10,42 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
 {
 
 
-    SelenideElement ok_btn = $x(".//div[@class='main-block']//button[contains(text(),'مُوَافق')]");
-    SelenideElement login_btn = $x("//nav//a[contains(text(),'تسجيل الدخول')]");
+    SelenideElement email = $x("//input[@type='text']");
+    SelenideElement login_btn = $x("//button[text()='Login']");
+    SelenideElement password = $x("//input[@type='password']");
+
+
+
 
 
 
 
 
     @Override
-    public ISpotOnSignInPage clickOnSignInButton()
+    public ISpotOnSignInPage enterEmail(String name)
     {
-        ok_btn.waitUntil(Condition.visible,4000).click();
-        login_btn.waitUntil(Condition.visible,4000).click();
+        email.sendKeys(name);
         return SpotOnPageFactory.getHomepage();
     }
 
     @Override
-    public ISpotOnSignInPage clickOnSignUpButton() {
-        return null;
+    public ISpotOnSignInPage enterPassword(String name)
+    {
+        password.sendKeys(name);
+        return SpotOnPageFactory.getHomepage();
     }
 
+    @Override
+    public ISpotOnSignInPage clickOnLoginButton()
+    {
+        login_btn.click();
+        return SpotOnPageFactory.getHomepage();
+    }
 
+    @Override
+    public ISpotOnSignUp clickOnButton()
+    {
+        System.out.println("Testing");
+        return SpotOnPageFactory.getSignUpPage();
+    }
 }

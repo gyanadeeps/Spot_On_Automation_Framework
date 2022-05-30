@@ -26,14 +26,14 @@ public interface SystemProperties {
     String SUITENAME = System.getProperty("SUITE", "testng");
 
     String DRIVER_TYPE = System.getProperty("DRIVER", "CHROME");
-    String USERNAME = System.getProperty("Username","testing+pf2@ecloudms.com");
+    String USERNAME = System.getProperty("Username","gyansahoo111@gmail.com ");
     String PASSWORD = System.getProperty("Password","Huck@3012");
     String REMOTE_DRIVER_STATUS = System.getProperty("remote.driver.status", "DISABLED");
    // String REMOTE_URL = getProperty("remote.url", "http://54.226.11.199:4444/wd/hub");
     String REMOTE_URL = System.getProperty("remote.url", "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub");
 
     String AUTHENTICATION_REQUIRED=System.getProperty("Authentication_Required", "Yes");
-    String AFDALANALYTICS_URL =System.getProperty("URL", "https://www.afdalanalytics.com/");
+    String SPOT_ON_URL =System.getProperty("URL", "http://dev.spot-on.com/");
     String AWS_BUILD = System.getProperty("AWS_BUILD", "sched");
     boolean SCREENSHOT_ON_EVERY_STEP = Boolean.parseBoolean(getProperty("screenshot_on_every_step"));
 

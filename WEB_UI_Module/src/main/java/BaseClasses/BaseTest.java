@@ -6,7 +6,7 @@ import java.util.List;
 
 import static com.codeborne.selenide.Selenide.open;
 
-import static data.SystemProperties.AFDALANALYTICS_URL;
+import static data.SystemProperties.SPOT_ON_URL;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public abstract class BaseTest extends BaseWebTest {
@@ -37,10 +37,10 @@ public abstract class BaseTest extends BaseWebTest {
 //            open(NCSAURL);
 //        }
 //        else{
-            assertThat(AFDALANALYTICS_URL).isNotNull();
-            System.err.println("Executing on URL-->" + AFDALANALYTICS_URL);
+            assertThat(SPOT_ON_URL).isNotNull();
+            System.err.println("Executing on URL-->" + SPOT_ON_URL);
 
-            open(AFDALANALYTICS_URL);
+            open(SPOT_ON_URL);
         }
 
     }
