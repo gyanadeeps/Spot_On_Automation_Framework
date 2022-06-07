@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="097997cd-fcb9-4e89-8743-443c9de2d38b" name="Changes" comment="Login test case">
-      <change afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/ISpotOnSignUp.java" afterDir="false" />
+    <list default="true" id="097997cd-fcb9-4e89-8743-443c9de2d38b" name="Changes" comment="Login test case v1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnSignUp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,13 +262,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627924201276</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Validation test case Report v2">
-      <created>1643388677447</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1643388677449</updated>
     </task>
     <task id="LOCAL-00061" summary="Account Test Cases">
       <created>1643466706939</created>
@@ -608,7 +599,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653931408936</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="Login test case v1">
+      <created>1653932010841</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1653932010841</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -627,7 +625,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/MyNavidGaid_automation" />
     </ignored-roots>
-    <MESSAGE value="Mobile Test cases v3" />
     <MESSAGE value="Mobile Test cases v4" />
     <MESSAGE value="Mobile Test cases v5" />
     <MESSAGE value="Mobile Test cases v6" />
@@ -652,7 +649,8 @@
     <MESSAGE value="Test cases fixed" />
     <MESSAGE value="Third commit" />
     <MESSAGE value="Login test case" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login test case" />
+    <MESSAGE value="Login test case v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login test case v1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/README_md$NewLoanFromActivityCenter.ic" NAME="NewLoanFromActivityCenter Coverage Results" MODIFIED="1642441795656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
