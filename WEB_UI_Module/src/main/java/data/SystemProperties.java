@@ -26,7 +26,7 @@ public interface SystemProperties {
     String SUITENAME = System.getProperty("SUITE", "testng");
 
     String DRIVER_TYPE = System.getProperty("DRIVER", "CHROME");
-    String USERNAME = System.getProperty("Username","gyansahoo111@gmail.com ");
+    String USERNAME = System.getProperty("Username","gyansahoo111@gmail.com");
     String PASSWORD = System.getProperty("Password","Huck@3012");
     String REMOTE_DRIVER_STATUS = System.getProperty("remote.driver.status", "DISABLED");
    // String REMOTE_URL = getProperty("remote.url", "http://54.226.11.199:4444/wd/hub");
