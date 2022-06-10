@@ -17,4 +17,13 @@ public class SpotOnPageFactory extends PageFactory
         return wrap(new SpotOnSignUp(), ISpotOnSignUp.class);
     }
 
+    public static ISpotOnProposalsPage getProposalsPage()
+    {
+        return wrap(new SpotOnProposalsPage(), ISpotOnProposalsPage.class);
+    }
+    public static ISpotOnPublishersPage getPublishersPage()
+    {
+        return wrap(new SpotOnPublishersPage(), ISpotOnPublishersPage.class);
+    }
+
 }
