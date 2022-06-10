@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="097997cd-fcb9-4e89-8743-443c9de2d38b" name="Changes" comment="Login test case">
-      <change afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/ISpotOnSignUp.java" afterDir="false" />
+    <list default="true" id="097997cd-fcb9-4e89-8743-443c9de2d38b" name="Changes" comment="Proposal and Publisher Page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnSignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/Artifacts/TestNG_Custom_Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/Artifacts/TestNG_Custom_Report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/engine/webdriver/ChromeDriverProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/engine/webdriver/ChromeDriverProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/ISpotOnSignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/ISpotOnSignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnSignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnSignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/test/HomePage/LoginPageUiValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/test/HomePage/LoginPageUiValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/ChromeDriverProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/ChromeDriverProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/ISpotOnSignInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/ISpotOnSignInPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/SpotOnSignInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/SpotOnSignInPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/SpotOnSignUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/SpotOnSignUp.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -89,29 +97,7 @@
       <command value="mvn clean test -Dbrowser=FF" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/CHROME.xml">
-    <configuration name="C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/Mobile_Module/src/test/resources/Android.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Mobile_Module" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/Mobile_Module/src/test/resources/Android.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.ProposalsPageValidation.verifyProposalsPage">
     <configuration name="C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/CHROME.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WEB_UI_Module" />
       <shortenClasspath name="NONE" />
@@ -121,34 +107,6 @@
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomerDetailsFromRecentActivityTab" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="WEB_UI_Module" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.HomePage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.HomePage" />
-      <option name="MAIN_CLASS_NAME" value="test.HomePage.CustomerDetailsFromRecentActivityTab" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
@@ -190,21 +148,79 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NewLoanFromCustomerTab" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ProposalsPageValidation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WEB_UI_Module" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.HomePage.*" />
+          <option name="PATTERN" value="test.ProposalsPage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.HomePage" />
-      <option name="MAIN_CLASS_NAME" value="test.HomePage.NewLoanFromCustomerTab" />
+      <option name="PACKAGE_NAME" value="test.ProposalsPage" />
+      <option name="MAIN_CLASS_NAME" value="test.ProposalsPage.ProposalsPageValidation" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProposalsPageValidation.verifyProposalsPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WEB_UI_Module" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.ProposalsPage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test.ProposalsPage" />
+      <option name="MAIN_CLASS_NAME" value="test.ProposalsPage.ProposalsPageValidation" />
+      <option name="METHOD_NAME" value="verifyProposalsPage" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PublishersPageValidation.verifyPublishersPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WEB_UI_Module" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.PublishersPage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test.PublishersPage" />
+      <option name="MAIN_CLASS_NAME" value="test.PublishersPage.PublishersPageValidation" />
+      <option name="METHOD_NAME" value="verifyPublishersPage" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
@@ -240,19 +256,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/Mobile_Module/src/test/resources/Android.xml" />
       <item itemvalue="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/CHROME.xml" />
-      <item itemvalue="TestNG.CustomerDetailsFromRecentActivityTab" />
-      <item itemvalue="TestNG.NewLoanFromCustomerTab" />
       <item itemvalue="TestNG.LoginPageUiValidation" />
+      <item itemvalue="TestNG.ProposalsPageValidation" />
+      <item itemvalue="TestNG.ProposalsPageValidation.verifyProposalsPage" />
+      <item itemvalue="TestNG.PublishersPageValidation.verifyPublishersPage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ProposalsPageValidation.verifyProposalsPage" />
+        <item itemvalue="TestNG.PublishersPageValidation.verifyPublishersPage" />
+        <item itemvalue="TestNG.ProposalsPageValidation" />
         <item itemvalue="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/CHROME.xml" />
         <item itemvalue="TestNG.LoginPageUiValidation" />
-        <item itemvalue="TestNG.NewLoanFromCustomerTab" />
-        <item itemvalue="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/Mobile_Module/src/test/resources/Android.xml" />
-        <item itemvalue="TestNG.CustomerDetailsFromRecentActivityTab" />
       </list>
     </recent_temporary>
   </component>
@@ -264,13 +280,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627924201276</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Validation test case Report v2">
-      <created>1643388677447</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1643388677449</updated>
     </task>
     <task id="LOCAL-00061" summary="Account Test Cases">
       <created>1643466706939</created>
@@ -608,7 +617,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653931408936</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="Proposal and Publisher Page">
+      <created>1654881076085</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1654881076086</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -621,13 +637,11 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/MyNavidGaid_automation" />
     </ignored-roots>
-    <MESSAGE value="Mobile Test cases v3" />
     <MESSAGE value="Mobile Test cases v4" />
     <MESSAGE value="Mobile Test cases v5" />
     <MESSAGE value="Mobile Test cases v6" />
@@ -652,9 +666,11 @@
     <MESSAGE value="Test cases fixed" />
     <MESSAGE value="Third commit" />
     <MESSAGE value="Login test case" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login test case" />
+    <MESSAGE value="Proposal and Publisher Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Proposal and Publisher Page" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/README_md$C__Users_team2_IdeaProjects_Web_API_Mobile_framework_WEB_UI_Module_src_main_resources_CHROME_xml.ic" NAME="$PROJECT_DIR$/../../../team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/CHROME.xml Coverage Results" MODIFIED="1654425684734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/README_md$NewLoanFromActivityCenter.ic" NAME="NewLoanFromActivityCenter Coverage Results" MODIFIED="1642441795656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>test.HomePage.*</FILTER>
     </SUITE>

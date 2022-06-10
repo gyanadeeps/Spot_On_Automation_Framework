@@ -1,6 +1,5 @@
 package pageobjects.pages;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import pageobjects.PageFactoryClasses.SpotOnPageFactory;
 
@@ -13,7 +12,8 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
     SelenideElement email = $x("//input[@type='text']");
     SelenideElement login_btn = $x("//button[text()='Login']");
     SelenideElement password = $x("//input[@type='password']");
-
+    SelenideElement proposals = $x("//ion-label[text()=' Proposals ']");
+    SelenideElement publishers = $x("//ion-label[text()=' Publishers ']");
 
 
 
@@ -48,4 +48,17 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
         System.out.println("Testing");
         return SpotOnPageFactory.getSignUpPage();
     }
+
+    @Override
+    public ISpotOnProposalsPage clickOnProposalsButton() {
+        proposals.click();
+        return SpotOnPageFactory.getProposalsPage();
+    }
+
+    @Override
+    public ISpotOnPublishersPage clickOnPublishersButton() {
+        publishers.click();
+        return SpotOnPageFactory.getPublishersPage();
+    }
+
 }

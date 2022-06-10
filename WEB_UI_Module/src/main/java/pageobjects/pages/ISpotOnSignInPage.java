@@ -7,4 +7,6 @@ public interface ISpotOnSignInPage
   ISpotOnSignInPage enterPassword(String name);
   ISpotOnSignInPage clickOnLoginButton();
   ISpotOnSignUp clickOnButton();
+  ISpotOnProposalsPage clickOnProposalsButton();
+  ISpotOnPublishersPage clickOnPublishersButton();
 }

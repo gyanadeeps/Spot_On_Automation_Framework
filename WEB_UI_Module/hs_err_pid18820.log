@@ -1,0 +1,221 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 268435456 bytes for G1 virtual space
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Zero Based Compressed Oops mode in which the Java heap is
+#     placed in the first 32GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 32GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (./src/hotspot/os/windows/os_windows.cpp:3331), pid=18820, tid=2668
+#
+# JRE version:  (15.0.7+4) (build )
+# Java VM: OpenJDK 64-Bit Server VM (15.0.7+4-MTS, mixed mode, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# Core dump will be written. Default location: C:\Users\team9\IdeaProjects\Spot_On_Automation_Framework\WEB_UI_Module\hs_err_pid18820.mdmp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -ea -Dtestng.dtd.http=true -DBASE_URI=https://api.spotify.com -DACCOUNT_BASE_URI=https://accounts.spotify.com -Didea.test.cyclic.buffer.size=1048576 -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3\lib\idea_rt.jar=58199:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3\bin -Dfile.encoding=UTF-8 com.intellij.rt.testng.RemoteTestNGStarter -usedefaultlisteners false -socket58198 @w@C:\Users\team9\AppData\Local\Temp\25\idea_working_dirs_testng.tmp -temp C:\Users\team9\AppData\Local\Temp\25\idea_testng.tmp
+
+Host: Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz, 4 cores, 15G,  Windows Server 2019 , 64 bit Build 17763 (10.0.17763.2928)
+Time: Fri Jun 10 12:02:42 2022 Coordinated Universal Time elapsed time: 0.249547 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000013c371fe2e0):  JavaThread "Unknown thread" [_thread_in_vm, id=2668, stack(0x0000002f08a00000,0x0000002f08b00000)]
+
+Stack: [0x0000002f08a00000,0x0000002f08b00000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x60020a]
+V  [jvm.dll+0x79fc29]
+V  [jvm.dll+0x7a1383]
+V  [jvm.dll+0x7a19d3]
+V  [jvm.dll+0x1fc678]
+V  [jvm.dll+0x5fd53a]
+V  [jvm.dll+0x5f2285]
+V  [jvm.dll+0x2b68ed]
+V  [jvm.dll+0x2b6752]
+V  [jvm.dll+0x2bc5bc]
+V  [jvm.dll+0x3083c8]
+V  [jvm.dll+0x307a84]
+V  [jvm.dll+0x28da1a]
+V  [jvm.dll+0x28eb80]
+V  [jvm.dll+0x77d5a1]
+V  [jvm.dll+0x316304]
+V  [jvm.dll+0x75e90c]
+V  [jvm.dll+0x3941af]
+V  [jvm.dll+0x395e41]
+C  [jli.dll+0x5243]
+C  [ucrtbase.dll+0x2268a]
+C  [KERNEL32.DLL+0x17974]
+C  [ntdll.dll+0x5a2f1]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007ffc561eab00, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x0000013c3724fd90 GCTaskThread "GC Thread#0" [stack: 0x0000002f08b00000,0x0000002f08c00000] [id=18864]
+  0x0000013c37260df0 ConcurrentGCThread "G1 Main Marker" [stack: 0x0000002f08c00000,0x0000002f08d00000] [id=34760]
+  0x0000013c37262900 ConcurrentGCThread "G1 Conc#0" [stack: 0x0000002f08d00000,0x0000002f08e00000] [id=19124]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffc5598eb07]
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x0000013c371fb360] Heap_lock - owner thread: 0x0000013c371fe2e0
+
+Heap address: 0x0000000700000000, size: 4096 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 0.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+Heap:
+ garbage-first heap   total 262144K, used 0K [0x0000000700000000, 0x0000000800000000)
+  region size 2048K, 0 young (0K), 0 survivors (0K)
+ Metaspace       used 0K, capacity 0K, committed 0K, reserved 0K
+  class space    used 0K, capacity 0K, committed 0K, reserved 0K
+
+Heap Regions: E=young(eden), S=young(survivor), O=old, HS=humongous(starts), HC=humongous(continues), CS=collection set, F=free, OA=open archive, CA=closed archive, TAMS=top-at-mark-start (previous, next)
+
+Card table byte_map: [0x0000013c4ef20000,0x0000013c4f720000] _byte_map_base: 0x0000013c4b720000
+
+Marking Bits (Prev, Next): (CMBitMap*) 0x0000013c37250490, (CMBitMap*) 0x0000013c372504d0
+ Prev Bits: [0x0000013c4ff20000, 0x0000013c53f20000)
+ Next Bits: [0x0000013c53f20000, 0x0000013c57f20000)
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (1 events):
+Event: 0.067 Loaded shared library C:\Users\team9\.jdks\azul-15.0.7\bin\java.dll
+
+
+Dynamic libraries:
+0x00007ff78c220000 - 0x00007ff78c22d000 	C:\Users\team9\.jdks\azul-15.0.7\bin\java.exe
+0x00007ffcaf8d0000 - 0x00007ffcafabd000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffcaf270000 - 0x00007ffcaf323000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffcabb70000 - 0x00007ffcabe04000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ffcabf40000 - 0x00007ffcac03a000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffc82ec0000 - 0x00007ffc82ed8000 	C:\Users\team9\.jdks\azul-15.0.7\bin\jli.dll
+0x00007ffcad140000 - 0x00007ffcad2d7000 	C:\Windows\System32\USER32.dll
+0x00007ffcac0f0000 - 0x00007ffcac110000 	C:\Windows\System32\win32u.dll
+0x00007ffcacdb0000 - 0x00007ffcacdd9000 	C:\Windows\System32\GDI32.dll
+0x00007ffcab960000 - 0x00007ffcabafc000 	C:\Windows\System32\gdi32full.dll
+0x00007ffc7f680000 - 0x00007ffc7f695000 	C:\Users\team9\.jdks\azul-15.0.7\bin\VCRUNTIME140.dll
+0x00007ffc92a60000 - 0x00007ffc92cd9000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17763.2928_none_de6f2d70534d3d29\COMCTL32.dll
+0x00007ffcacde0000 - 0x00007ffcace7e000 	C:\Windows\System32\msvcrt.dll
+0x00007ffcad310000 - 0x00007ffcad63d000 	C:\Windows\System32\combase.dll
+0x00007ffcac110000 - 0x00007ffcac1b0000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffcad820000 - 0x00007ffcad93d000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffcabe10000 - 0x00007ffcabe92000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffcaf3e0000 - 0x00007ffcaf40e000 	C:\Windows\System32\IMM32.DLL
+0x00007ffc6fb00000 - 0x00007ffc6fb9b000 	C:\Users\team9\.jdks\azul-15.0.7\bin\msvcp140.dll
+0x00007ffc556f0000 - 0x00007ffc5628a000 	C:\Users\team9\.jdks\azul-15.0.7\bin\server\jvm.dll
+0x00007ffcad090000 - 0x00007ffcad137000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffcad940000 - 0x00007ffcad9df000 	C:\Windows\System32\sechost.dll
+0x00007ffcaf890000 - 0x00007ffcaf898000 	C:\Windows\System32\PSAPI.DLL
+0x00007ffc93ce0000 - 0x00007ffc93ce9000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffca1340000 - 0x00007ffca1364000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffca3920000 - 0x00007ffca392a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffc9fd10000 - 0x00007ffc9fd3d000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x00007ffcabec0000 - 0x00007ffcabf0a000 	C:\Windows\System32\cfgmgr32.dll
+0x00007ffcad7b0000 - 0x00007ffcad81d000 	C:\Windows\System32\WS2_32.dll
+0x00007ffcab8b0000 - 0x00007ffcab8c1000 	C:\Windows\System32\kernel.appcore.dll
+0x00007ffc930c0000 - 0x00007ffc930ca000 	C:\Users\team9\.jdks\azul-15.0.7\bin\jimage.dll
+0x00007ffca2070000 - 0x00007ffca225d000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ffca14e0000 - 0x00007ffca150a000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007ffc92390000 - 0x00007ffc9239e000 	C:\Users\team9\.jdks\azul-15.0.7\bin\instrument.dll
+0x00007ffc7cf00000 - 0x00007ffc7cf25000 	C:\Users\team9\.jdks\azul-15.0.7\bin\java.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Users\team9\.jdks\azul-15.0.7\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17763.2928_none_de6f2d70534d3d29;C:\Users\team9\.jdks\azul-15.0.7\bin\server
+
+VM Arguments:
+jvm_args: -ea -Dtestng.dtd.http=true -DBASE_URI=https://api.spotify.com -DACCOUNT_BASE_URI=https://accounts.spotify.com -Didea.test.cyclic.buffer.size=1048576 -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3\lib\idea_rt.jar=58199:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3\bin -Dfile.encoding=UTF-8 
+java_command: com.intellij.rt.testng.RemoteTestNGStarter -usedefaultlisteners false -socket58198 @w@C:\Users\team9\AppData\Local\Temp\25\idea_working_dirs_testng.tmp -temp C:\Users\team9\AppData\Local\Temp\25\idea_testng.tmp
+java_class_path (initial): C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3\plugins\testng\lib\testng-rt.jar;C:\Users\team9\IdeaProjects\Spot_On_Automation_Framework\WEB_UI_Module\target\classes;C:\Users\team9\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\team9\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\team9\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\team9\.m2\repository\org\projectlombok\lombok\1.18.4\lombok-1.18.4.jar;C:\Users\team9\.m2\repository\com\codeborne\selenide\5.10.0\selenide-5.10.0.jar;C:\Users\team9\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\team9\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\team9\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\team9\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\team9\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\team9\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\team9\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\team9\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\team9\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\team9\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\team9\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\team9\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okh
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 3                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 1                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 4                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 2097152                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 268435456                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 4294967296                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 2097152                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5832780                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122912730                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122912730                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 4294967296                             {manageable} {ergonomic}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-11.0.2
+PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Docker;C:\Program Files\Java\jdk-11.0.2\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jre1.8.0_311\bin;C:\Users\team2\Downloads\allure-2.13.8\bin;C:\Users\team2\Downloads\apache-maven-3.8.4\bin;C:\Users\team3\AppData\Local\Programs\Python\Python310;C:\Users\team3\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\team6\Downloads\allure-commandline-2.17.0\allure-2.17.0\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Users\team6\Downloads\allure-commandline-2.17.3\allure-2.17.3\bin;C:\Users\team2\Downloads\apache-maven-3.8.4;C:\Users\team9\AppData\Local\Microsoft\WindowsApps;
+USERNAME=team9
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 85 Stepping 4, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows Server 2019 , 64 bit Build 17763 (10.0.17763.2928)
+OS uptime: 13 days 23:27 hours
+HyperV virtualization detected
+
+CPU: total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 85 stepping 4 microcode 0xffffffff, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, vzeroupper, avx, avx2, aes, clmul, erms, rtm, 3dnowpref, lzcnt, ht, tsc, bmi1, bmi2, adx, fma, clflush, clflushopt
+
+Memory: 4k page, system-wide physical 16383M (739M free)
+TotalPageFile size 20479M (AvailPageFile size 71M)
+current process WorkingSet (physical memory assigned to process): 10M, peak: 10M
+current process commit charge ("private bytes"): 52M, peak: 308M
+
+vm_info: OpenJDK 64-Bit Server VM (15.0.7+4-MTS) for windows-amd64 JRE (15.0.7+4-MTS) (Zulu15.40+19-CA), built on Apr 16 2022 15:25:49 by "zulu_re" with MS VC++ 15.9 (VS2017)
+
+END.
