@@ -169,10 +169,10 @@ public class TestNGCustomReport implements IReporter {
         writer.print("<td> "+ SystemProperties.BUILD_URL+"allure/" +" </td>");
         writer.print("</tr>");
 
-        writer.print("<tr>");
+       /* writer.print("<tr>");
         writer.println("<th>AWS_BUILD"+"&#x2a;</td>");
         writer.print("<td> "+ SystemProperties.AWS_BUILD+" </td>");
-        writer.print("</tr>");
+        writer.print("</tr>");*/
 
 
         writer.print("<tr>");
