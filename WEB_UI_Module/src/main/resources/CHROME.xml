@@ -16,7 +16,26 @@
 
     </test>
 
+    <test name="Spot On Proposals Page Ui Validation">
+        <classes>
+            <class name="test.ProposalsPage.ProposalsPageValidation"/>
+        </classes>
 
+    </test>
+
+    <test name="Spot On Publishers Page Ui Validation">
+        <classes>
+            <class name="test.PublishersPage.PublishersPageValidation"/>
+        </classes>
+
+    </test>
+
+    <test name="Spot On Campaign Creation Validation">
+        <classes>
+            <class name="test.CampaignPage.CreateCampaignValidation"/>
+        </classes>
+
+    </test>
 
 
 </suite> <!-- Suite -->

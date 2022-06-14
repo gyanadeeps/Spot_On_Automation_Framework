@@ -26,4 +26,8 @@ public class SpotOnPageFactory extends PageFactory
         return wrap(new SpotOnPublishersPage(), ISpotOnPublishersPage.class);
     }
 
+    public static ISpotOnCreateCampaign getCampaign()
+    {
+        return wrap(new SpotOnCreateCampaign(), ISpotOnCreateCampaign.class);
+    }
 }

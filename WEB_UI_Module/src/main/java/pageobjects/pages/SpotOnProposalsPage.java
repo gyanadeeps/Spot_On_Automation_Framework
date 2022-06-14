@@ -107,8 +107,8 @@ public class SpotOnProposalsPage implements ISpotOnProposalsPage {
 
     @Override
     public ISpotOnProposalsPage clickSaveChangesBtn() {
-        Selenide.executeJavaScript("arguments[0].click();",saveChangesBtn);
-        //saveChangesBtn.click();
+        //Selenide.executeJavaScript("arguments[0].click();",saveChangesBtn);
+        saveChangesBtn.scrollIntoView(true).click();
         return SpotOnPageFactory.getProposalsPage();
     }
 

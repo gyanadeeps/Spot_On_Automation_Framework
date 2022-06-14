@@ -59,6 +59,9 @@ public interface SystemProperties {
     String UNIT_COST = System.getProperty("UnitCost","15");
     String UNIT_AVAILABILITY = System.getProperty("Availability","2000");
 
+    String SEARCH_KEY_PROPOSALS = System.getProperty("SearchKeyProposals","rOsmF Automation");
+    String DESIRED_IMPRESSIONS = System.getProperty("DesiredImpressions", "1000");
+    String ALLOCATED_BUDGET = System.getProperty("AllocatedBudget","10");
 
     //String STATE_NAME = System.getProperty("StateName","California ");
 

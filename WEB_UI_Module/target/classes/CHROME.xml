@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Afdal Analytics Validation Suite" parallel="classes" thread-count="2">
+<suite name="Spot On Validation Suite" parallel="classes" thread-count="2">
 
     <listeners>
 <!--        <listener class-name="BaseClasses.AnnotationTransformer"></listener>-->
@@ -16,7 +16,26 @@
 
     </test>
 
+    <test name="Spot On Proposals Page Ui Validation">
+        <classes>
+            <class name="test.ProposalsPage.ProposalsPageValidation"/>
+        </classes>
 
+    </test>
+
+    <test name="Spot On Publishers Page Ui Validation">
+        <classes>
+            <class name="test.PublishersPage.PublishersPageValidation"/>
+        </classes>
+
+    </test>
+
+    <test name="Spot On Campaign Creation Validation">
+        <classes>
+            <class name="test.CampaignPage.CreateCampaignValidation"/>
+        </classes>
+
+    </test>
 
 
 </suite> <!-- Suite -->

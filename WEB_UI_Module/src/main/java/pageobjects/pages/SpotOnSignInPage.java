@@ -61,4 +61,9 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
         return SpotOnPageFactory.getPublishersPage();
     }
 
+    @Override
+    public ISpotOnCreateCampaign clickOnProposalsBtn() {
+        proposals.click();
+        return SpotOnPageFactory.getCampaign();
+    }
 }
