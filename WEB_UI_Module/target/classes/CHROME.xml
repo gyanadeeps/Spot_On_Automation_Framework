@@ -30,9 +30,83 @@
 
     </test>
 
+    <test name="Spot On Edit Publisher Page Validation">
+        <classes>
+            <class name="test.PublishersPage.EditPublisherValidation"/>
+        </classes>
+
+    </test>
+
     <test name="Spot On Campaign Creation Validation">
         <classes>
             <class name="test.CampaignPage.CreateCampaignValidation"/>
+        </classes>
+
+    </test>
+
+    <test name="Spot On Proposals Page Creation with Account Manager Validation">
+        <classes>
+            <class name="test.ProposalsPage.ProposalsPageAccMgrValidation"/>
+        </classes>
+
+    </test>
+
+    <test name="Spot On Campaign Creation with Account Manager">
+        <classes>
+            <class name="test.CampaignPage.CreateCampaignAccMgrValidation"/>
+        </classes>
+
+    </test>
+
+    <test name="Spot On Clients Page Validation">
+        <classes>
+            <class name="test.ClientsPage.ClientsPageUIValidation"/>
+        </classes>
+
+    </test>
+
+
+
+    <test name="Spot On Creatives Page Validation">
+        <classes>
+            <class name="test.CreativesPage.CreativesPageUIValidation"/>
+        </classes>
+
+    </test>
+
+    <test name="Spot On Creatives Page Creative Manager Validation">
+        <classes>
+            <class name="test.CreativesPage.CreativesPageAccMgrValidation"/>
+        </classes>
+
+    </test>
+
+
+    <test name="Spot On Creatives Publisher Page Validation">
+        <classes>
+            <class name="test.CreativesPublisherPage.CreativesPublisherValidation"/>
+        </classes>
+
+    </test>
+
+
+    <test name="Spot On Users Page Validation">
+        <classes>
+            <class name="test.UsersPage.UsersPageValidation"/>
+        </classes>
+
+    </test>
+
+    <test name="Spot On Campaign Page Publisher User Validation">
+        <classes>
+            <class name="test.PublisherUser.CampaignPageValidation"/>
+        </classes>
+
+    </test>
+
+    <test name="Spot On Publisher User Validation">
+        <classes>
+            <class name="test.PublisherUser.PublisherUserValidation"/>
         </classes>
 
     </test>

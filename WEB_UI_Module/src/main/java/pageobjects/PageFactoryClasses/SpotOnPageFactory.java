@@ -30,4 +30,45 @@ public class SpotOnPageFactory extends PageFactory
     {
         return wrap(new SpotOnCreateCampaign(), ISpotOnCreateCampaign.class);
     }
+
+    public static ISpotOnCreativesPage getCreativesPage()
+    {
+        return wrap(new SpotOnCreativesPage(), ISpotOnCreativesPage.class);
+    }
+
+    public static ISpotOnClientsPage getClientsPage()
+    {
+        return wrap(new SpotOnClientsPage(), ISpotOnClientsPage.class);
+    }
+
+    public static ISpotOnUsersPage getUsersPage()
+    {
+
+        return wrap(new SpotOnUsersPage(), ISpotOnUsersPage.class);
+    }
+
+    public static ISpotOnPublisherUser verifyPublisherUser()
+    {
+
+        return wrap(new SpotOnPublisherUser(), ISpotOnPublisherUser.class);
+    }
+
+    public static ISpotOnCampaignPublisherUser getCampaignsPage()
+    {
+
+        return wrap(new SpotOnCampaignPublisherUser(), ISpotOnCampaignPublisherUser.class);
+    }
+
+    public static ISpotOnEditPublisher getEditPublishersPage()
+    {
+
+        return wrap(new SpotOnEditPublisher(), ISpotOnEditPublisher.class);
+    }
+
+    public static ISpotOnCreativesPublisherPage getCreativesPublishersPage()
+    {
+
+        return wrap(new SpotOnCreativesPublisherPage(), ISpotOnCreativesPublisherPage.class);
+    }
+
 }

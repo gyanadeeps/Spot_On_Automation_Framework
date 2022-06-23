@@ -2,18 +2,24 @@ package pageobjects.pages;
 
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
+import data.SystemProperties;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import pageobjects.PageFactoryClasses.SpotOnPageFactory;
+import utilities.ReadWriteData;
 
 import static com.codeborne.selenide.Selenide.$x;
 
 public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
 
+
+
     SelenideElement proposalsLabel = $x("//label[text()='Proposals']");
     SelenideElement search = $x("//input[@placeholder='Search']");
-    SelenideElement proposal = $x("//span[text()='rOsmF Automation']");
+    SelenideElement proposal = $x("//span[text()='"+ SystemProperties.campaignKey+"']");
+    SelenideElement proposalAM = $x("//span[text()='"+ SystemProperties.campaignKeyAM+"']");
+    SelenideElement description = $x("//textarea[contains(@class,'sc-ion-textarea-md')]");
     SelenideElement searchAndSelectPublisher = $x("//button[text()='+ Search and Select a Publisher ']");
     SelenideElement addNationalPublisher = $x("//button[text()='+ Add More National Publishers? ']");
     SelenideElement publisher = $x("//span[text()='Achin Test June']");
@@ -40,7 +46,17 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
     @Override
     public ISpotOnCreateCampaign enterSearchKeyword(String searchKey) {
 
+       // String s = rwd.getStr();
+       // System.out.println("Campaign Key:"+s);
         search.sendKeys(searchKey);
+        search.sendKeys(Keys.ENTER);
+        return SpotOnPageFactory.getCampaign();
+    }
+
+    @Override
+    public ISpotOnCreateCampaign enterSearchKeywordAM(String searchKeyAM) {
+
+        search.sendKeys(searchKeyAM);
         search.sendKeys(Keys.ENTER);
         return SpotOnPageFactory.getCampaign();
     }
@@ -49,6 +65,20 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
     public ISpotOnCreateCampaign clickProposal() {
 
         proposal.click();
+        return SpotOnPageFactory.getCampaign();
+    }
+
+    @Override
+    public ISpotOnCreateCampaign clickProposalAM() {
+
+        proposalAM.click();
+        return SpotOnPageFactory.getCampaign();
+    }
+
+    @Override
+    public ISpotOnCreateCampaign enterDescription(String descValue) {
+
+        description.sendKeys(descValue);
         return SpotOnPageFactory.getCampaign();
     }
 

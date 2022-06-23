@@ -4,18 +4,9 @@ import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 
-import com.codeborne.selenide.WebDriverRunner;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import pageobjects.PageFactoryClasses.SpotOnPageFactory;
-
-import javax.swing.*;
-import java.util.Random;
-
 import static com.codeborne.selenide.Selenide.*;
 
 public class SpotOnPublishersPage implements ISpotOnPublishersPage {

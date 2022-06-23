@@ -3,7 +3,11 @@ package pageobjects.pages;
 public interface ISpotOnCreateCampaign {
     ISpotOnCreateCampaign verifyProposalsPage();
     ISpotOnCreateCampaign enterSearchKeyword(String searchKey);
+    ISpotOnCreateCampaign enterSearchKeywordAM(String searchKeyAM);
     ISpotOnCreateCampaign clickProposal();
+    ISpotOnCreateCampaign clickProposalAM();
+    ISpotOnCreateCampaign enterDescription(String descValue);
+
     ISpotOnCreateCampaign clickSearchAndSelectPublisher();
     ISpotOnCreateCampaign clickAddMoreNationalPublisher();
     ISpotOnCreateCampaign selectNationalPublisher();

@@ -10,4 +10,12 @@ public interface ISpotOnSignInPage
   ISpotOnProposalsPage clickOnProposalsButton();
   ISpotOnPublishersPage clickOnPublishersButton();
   ISpotOnCreateCampaign clickOnProposalsBtn();
+  ISpotOnCreativesPage clickOnCreativesBtn();
+  ISpotOnClientsPage clickOnClientsBtn();
+  ISpotOnUsersPage clickOnUsersBtn();
+  ISpotOnPublisherUser verifyPublisherProfile();
+  ISpotOnCampaignPublisherUser clickOnCampaignsBtn();
+  ISpotOnEditPublisher clickOnPublishersBtn();
+  ISpotOnCreativesPublisherPage clickOnCreativesPublisherBtn();
+
 }

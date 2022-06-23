@@ -2,7 +2,6 @@ package test.CampaignPage;
 
 import BaseClasses.BaseTest;
 import ImplementationClasses.SpotOnCreateCampaignImpl;
-import ImplementationClasses.SpotOnPublishersImpl;
 import org.testng.annotations.Test;
 
 public class CreateCampaignValidation extends BaseTest {

@@ -1,6 +1,7 @@
 package pageobjects.pages;
 
 import com.codeborne.selenide.SelenideElement;
+import org.testng.Assert;
 import pageobjects.PageFactoryClasses.SpotOnPageFactory;
 
 import static com.codeborne.selenide.Selenide.$x;
@@ -14,11 +15,12 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
     SelenideElement password = $x("//input[@type='password']");
     SelenideElement proposals = $x("//ion-label[text()=' Proposals ']");
     SelenideElement publishers = $x("//ion-label[text()=' Publishers ']");
-
-
-
-
-
+    SelenideElement creatives = $x("//ion-label[text()=' Creatives ']");
+    SelenideElement clients = $x("//ion-label[text()=' Clients ']");
+    SelenideElement users = $x("//ion-label[text()=' Users ']");
+    SelenideElement profileLabel = $x("//h2[text()='Profile']");
+    SelenideElement campaigns = $x("//ion-label[text()=' Campaigns ']");
+    SelenideElement creativesPublisher = $x("//ion-label[text()=' Creatives (Publisher) ']");
 
 
     @Override
@@ -65,5 +67,55 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
     public ISpotOnCreateCampaign clickOnProposalsBtn() {
         proposals.click();
         return SpotOnPageFactory.getCampaign();
+    }
+
+    @Override
+    public ISpotOnCreativesPage clickOnCreativesBtn() {
+
+        creatives.click();
+        return SpotOnPageFactory.getCreativesPage();
+    }
+
+    @Override
+    public ISpotOnClientsPage clickOnClientsBtn() {
+
+        clients.click();
+        return SpotOnPageFactory.getClientsPage();
+    }
+
+    @Override
+    public ISpotOnUsersPage clickOnUsersBtn() {
+
+        users.click();
+        return SpotOnPageFactory.getUsersPage();
+    }
+
+    @Override
+    public ISpotOnPublisherUser verifyPublisherProfile() {
+
+        String label = profileLabel.getText();
+        Assert.assertEquals(label,"Profile");
+        return SpotOnPageFactory.verifyPublisherUser();
+    }
+
+    @Override
+    public ISpotOnCampaignPublisherUser clickOnCampaignsBtn() {
+
+        campaigns.click();
+        return SpotOnPageFactory.getCampaignsPage();
+    }
+
+    @Override
+    public ISpotOnEditPublisher clickOnPublishersBtn() {
+
+        publishers.click();
+        return SpotOnPageFactory.getEditPublishersPage();
+    }
+
+    @Override
+    public ISpotOnCreativesPublisherPage clickOnCreativesPublisherBtn() {
+
+        creativesPublisher.click();
+        return SpotOnPageFactory.getCreativesPublishersPage();
     }
 }

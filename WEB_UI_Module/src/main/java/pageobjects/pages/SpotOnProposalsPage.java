@@ -6,6 +6,7 @@ import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
 import org.testng.Assert;
 import pageobjects.PageFactoryClasses.SpotOnPageFactory;
+import utilities.ReadWriteData;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
@@ -14,6 +15,7 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class SpotOnProposalsPage implements ISpotOnProposalsPage {
 
+    ReadWriteData rwd = new ReadWriteData();
     SelenideElement proposalsLabel = $x("//label[text()='Proposals']");
     SelenideElement newProposalBtn = $x("//button[contains(text(),'New Proposal')]");
     SelenideElement proposalName = $x("//app-so-input[@label='Proposal Name']//input[contains(@class,'native-input')]");
@@ -45,7 +47,9 @@ public class SpotOnProposalsPage implements ISpotOnProposalsPage {
 
     @Override
     public ISpotOnProposalsPage enterProposalName(String propName) {
-        proposalName.sendKeys(propName);
+
+        rwd.setStr(propName);
+        proposalName.sendKeys(rwd.getStr());
         return SpotOnPageFactory.getProposalsPage();
     }
 

@@ -5,7 +5,7 @@ import BaseClasses.SpotOnLoginPage;
 import data.SystemProperties;
 import pageobjects.pages.ISpotOnSignInPage;
 
-public class SpotOnCreateCampaignImpl extends SpotOnLoginPage implements Feature {
+public class SpotOnCampaignCreationAccMgrImpl extends SpotOnLoginPage implements Feature {
     private ISpotOnSignInPage homePage;
     @Override
     public void init() {
@@ -17,13 +17,13 @@ public class SpotOnCreateCampaignImpl extends SpotOnLoginPage implements Feature
     public void execute() {
         try {
 
-            homePage.enterEmail(SystemProperties.USERNAME)
+            homePage.enterEmail(SystemProperties.ACCOUNT_MANAGER_USERNAME)
                     .enterPassword(SystemProperties.PASSWORD)
                     .clickOnLoginButton()
                     .clickOnProposalsBtn()
                     .verifyProposalsPage()
-                    .enterSearchKeyword(SystemProperties.SEARCH_KEY_PROPOSALS)
-                    .clickProposal()
+                    .enterSearchKeywordAM(SystemProperties.SEARCH_KEY_PROPOSALS_AM)
+                    .clickProposalAM()
                     .enterDescription(SystemProperties.DESCRIPTION_NEW_VALUE)
                     .clickSearchAndSelectPublisher()
                     .clickAddMoreNationalPublisher()
@@ -35,7 +35,7 @@ public class SpotOnCreateCampaignImpl extends SpotOnLoginPage implements Feature
                     //.enterAllocatedBudget(SystemProperties.ALLOCATED_BUDGET)
                     .selectBuyBtn()
                     .clickUpdateBtn()
-                    .clickProposal()
+                    .clickProposalAM()
                     .clickCreateNewCampaignBtn();
         } catch (Exception exception) {
             exception.printStackTrace();
