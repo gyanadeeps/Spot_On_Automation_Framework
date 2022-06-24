@@ -99,7 +99,13 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
     @Override
     public ISpotOnCreateCampaign selectNationalPublisher() {
 
-        publisher.click();
+        try {
+            Thread.sleep(3000);
+            publisher.click();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
         return SpotOnPageFactory.getCampaign();
     }
 
