@@ -100,7 +100,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
     public ISpotOnCreateCampaign selectNationalPublisher() {
 
         try {
-            Thread.sleep(3000);
+            Thread.sleep(30000);
             publisher.click();
         }
         catch (Exception e){
