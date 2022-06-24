@@ -30,13 +30,6 @@
 
     </test>
 
-    <test name="Spot On Edit Publisher Page Validation">
-        <classes>
-            <class name="test.PublishersPage.EditPublisherValidation"/>
-        </classes>
-
-    </test>
-
     <test name="Spot On Campaign Creation Validation">
         <classes>
             <class name="test.CampaignPage.CreateCampaignValidation"/>
@@ -51,12 +44,22 @@
 
     </test>
 
+
     <test name="Spot On Campaign Creation with Account Manager">
         <classes>
             <class name="test.CampaignPage.CreateCampaignAccMgrValidation"/>
         </classes>
 
     </test>
+
+
+    <test name="Spot On Edit Publisher Page Validation">
+        <classes>
+            <class name="test.PublishersPage.EditPublisherValidation"/>
+        </classes>
+
+    </test>
+
 
     <test name="Spot On Clients Page Validation">
         <classes>
