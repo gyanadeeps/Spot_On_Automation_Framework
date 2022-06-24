@@ -122,7 +122,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage{
             robot.keyRelease(KeyEvent.VK_ENTER);*/
 
             Thread.sleep(5000);
-            String s= System.getProperty("user.dir")+"\\test1.jpg";
+            String s= System.getProperty("user.dir")+"/test1.jpg";
             System.out.println("path: " +s);
             selectFile.scrollIntoView(true).sendKeys(s);
             Thread.sleep(5000);
