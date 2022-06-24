@@ -54,6 +54,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
     @Override
     public ISpotOnPublishersPage enterPublisherName(String publisher) {
 
+        System.out.println("Publisher:" +publisher);
         publisherName.sendKeys(publisher);
         return SpotOnPageFactory.getPublishersPage();
     }

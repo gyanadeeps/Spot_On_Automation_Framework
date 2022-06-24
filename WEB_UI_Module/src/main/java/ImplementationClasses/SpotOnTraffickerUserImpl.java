@@ -1,0 +1,31 @@
+package ImplementationClasses;
+
+import BaseClasses.Feature;
+import BaseClasses.SpotOnLoginPage;
+import data.SystemProperties;
+import pageobjects.pages.ISpotOnSignInPage;
+
+public class SpotOnTraffickerUserImpl extends SpotOnLoginPage implements Feature
+{
+    private ISpotOnSignInPage homePage;
+    @Override
+    public void init()
+    {
+        homePage = openSpotOnPage();
+    }
+
+    @Override
+    public void execute() {
+        try {
+
+            homePage.enterEmail(SystemProperties.TRAFFICKER_USERNAME)
+                    .enterPassword(SystemProperties.PASSWORD)
+                    .clickOnLoginButton()
+                    .verifyTraffickerProfile()
+                    .verifyTraffickerLink()
+                    ;
+        } catch (Exception exception) {
+            exception.printStackTrace();
+        }
+    }
+}

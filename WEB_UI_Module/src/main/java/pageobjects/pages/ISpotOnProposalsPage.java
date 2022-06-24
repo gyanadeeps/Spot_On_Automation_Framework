@@ -4,6 +4,7 @@ public interface ISpotOnProposalsPage {
     ISpotOnProposalsPage verifyProposalsPage();
     ISpotOnProposalsPage clickOnNewProposalBtn();
     ISpotOnProposalsPage enterProposalName(String propName);
+    ISpotOnProposalsPage enterProposalNameAM(String propNameAM);
     ISpotOnProposalsPage enterDescription(String desc);
     ISpotOnProposalsPage selCampaignType();
     ISpotOnProposalsPage enterStartDate(String sDate);

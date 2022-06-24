@@ -3,6 +3,7 @@ package pageobjects.pages;
 public interface ISpotOnEditPublisher {
 
     ISpotOnEditPublisher verifyPublisherPage();
+    ISpotOnEditPublisher enterSearchKeyword(String searchKey);
     ISpotOnEditPublisher selectPublisher();
     ISpotOnEditPublisher clickAddNewBtn();
     int getNumberOfRows();

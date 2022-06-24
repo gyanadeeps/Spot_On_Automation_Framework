@@ -2,7 +2,9 @@ package pageobjects.pages;
 
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.WebDriverRunner;
 import data.SystemProperties;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import pageobjects.PageFactoryClasses.SpotOnPageFactory;
 
@@ -28,6 +30,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage{
     SelenideElement selectFileBtn = $x("//button[text()='+ Select File']");
     SelenideElement addToQueue = $x("//button[text()='Add to queue']");
     SelenideElement sendCreativesForReviewBtn = $x("//button[text()=' Send Creatives to Review']");
+    SelenideElement selectFile = $x("//input[@type='file']");
 
     @Override
     public ISpotOnCreativesPage verifyCreativesPage() {
@@ -47,7 +50,6 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage{
     @Override
     public ISpotOnCreativesPage enterCampaign(String campValue) {
 
-
         campaign.sendKeys(campValue);
         campaignValue.click();
         return SpotOnPageFactory.getCreativesPage();
@@ -65,6 +67,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage{
     @Override
     public ISpotOnCreativesPage enterName(String nameValue) {
 
+        System.out.println("Creative: " +nameValue);
         name.sendKeys(nameValue);
         return SpotOnPageFactory.getCreativesPage();
     }
@@ -103,7 +106,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage{
     public ISpotOnCreativesPage selectFile() {
 
         try {
-            Selenide.executeJavaScript("arguments[0].click();",selectFileBtn);
+            /*Selenide.executeJavaScript("arguments[0].click();",selectFileBtn);
             Thread.sleep(3000);
             StringSelection ss = new StringSelection("C:\\Users\\team9\\Desktop\\test1.jpg");
             Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
@@ -116,7 +119,12 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage{
             robot.keyRelease(KeyEvent.VK_CONTROL);
             Thread.sleep(3000);
             robot.keyPress(KeyEvent.VK_ENTER);
-            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);*/
+
+            Thread.sleep(5000);
+            String s= System.getProperty("user.dir")+"\\test1.jpg";
+            System.out.println("path: " +s);
+            selectFile.scrollIntoView(true).sendKeys(s);
             Thread.sleep(5000);
         }
         catch (Exception e){
@@ -149,6 +157,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage{
         try {
             Thread.sleep(3000);
             sendCreativesForReviewBtn.click();
+            Thread.sleep(3000);
         }
         catch (Exception e){
 

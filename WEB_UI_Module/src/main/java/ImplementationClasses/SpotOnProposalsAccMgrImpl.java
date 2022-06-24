@@ -21,7 +21,7 @@ public class SpotOnProposalsAccMgrImpl extends SpotOnLoginPage implements Featur
                     .enterPassword(SystemProperties.PASSWORD)
                     .clickOnLoginButton().clickOnProposalsButton()
                     .verifyProposalsPage().clickOnNewProposalBtn()
-                    .enterProposalName(SystemProperties.PROPOSAL_NAME)
+                    .enterProposalNameAM(SystemProperties.PROPOSAL_NAME_AM)
                     .enterDescription(SystemProperties.DESCRIPTION)
                     .selCampaignType()
                     .enterStartDate(SystemProperties.START_DATE)

@@ -4,31 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="097997cd-fcb9-4e89-8743-443c9de2d38b" name="Changes" comment="Login test case v2">
+    <list default="true" id="097997cd-fcb9-4e89-8743-443c9de2d38b" name="Changes" comment="Test Case V3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/Artifacts/TestNG_Custom_Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/Artifacts/TestNG_Custom_Report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/Artifacts/failedScreenshots/verifyCampaignCreation.png" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/Artifacts/failedScreenshots/verifyCampaignCreation.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/Artifacts/failedScreenshots/verifyProposalsPage.png" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/Artifacts/failedScreenshots/verifyProposalsPage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/ImplementationClasses/SpotOnCreateCampaignImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/ImplementationClasses/SpotOnCreateCampaignImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/hs_err_pid10144.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/hs_err_pid10144.mdmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/hs_err_pid18820.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/hs_err_pid18820.mdmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/hs_err_pid26844.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/hs_err_pid26844.mdmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/hs_err_pid33908.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/hs_err_pid33908.mdmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/hs_err_pid33980.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/hs_err_pid33980.mdmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/hs_err_pid35336.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/hs_err_pid35336.mdmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/ImplementationClasses/SpotOnEditPublisherImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/ImplementationClasses/SpotOnEditPublisherImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/ImplementationClasses/SpotOnProposalsAccMgrImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/ImplementationClasses/SpotOnProposalsAccMgrImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/data/SystemProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/data/SystemProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/engine/webdriver/ChromeDriverProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/engine/webdriver/ChromeDriverProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/PageFactoryClasses/SpotOnPageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/PageFactoryClasses/SpotOnPageFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/ISpotOnCreateCampaign.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/ISpotOnCreateCampaign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/ISpotOnEditPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/ISpotOnEditPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/ISpotOnProposalsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/ISpotOnProposalsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/ISpotOnSignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/ISpotOnSignInPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnCreateCampaign.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnCreateCampaign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnCreativesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnCreativesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnEditPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnEditPublisher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnProposalsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnProposalsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnPublishersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnPublishersPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnSignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnSignInPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/test/CampaignPage/CreateCampaignValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/test/CampaignPage/CreateCampaignValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnUsersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnUsersPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/test/PublisherUser/CampaignPageValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/test/PublisherUser/CampaignPageValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/utilities/ReadWriteData.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/utilities/ReadWriteData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/resources/CHROME.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/resources/CHROME.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/resources/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/CHROME.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/CHROME.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/ImplementationClasses/SpotOnCreateCampaignImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/ImplementationClasses/SpotOnCreateCampaignImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/data/SystemProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/data/SystemProperties.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/ChromeDriverProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/ChromeDriverProvider.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/PageFactoryClasses/SpotOnPageFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/PageFactoryClasses/SpotOnPageFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/ISpotOnCreateCampaign.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/ISpotOnCreateCampaign.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/ISpotOnProposalsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/ISpotOnProposalsPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/ISpotOnSignInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/ISpotOnSignInPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/SpotOnCreateCampaign.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/SpotOnCreateCampaign.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/SpotOnProposalsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/SpotOnProposalsPage.class" afterDir="false" />
@@ -93,6 +110,8 @@
       <recent name="D:\MyNavidGaid_automation\WEB_UI_Module\allure-results" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\team9\IdeaProjects\Spot_On_Automation_Framework\WEB_UI_Module" />
+      <recent name="C:\Users\team9\IdeaProjects\Spot_On_Automation_Framework\WEB_UI_Module\src\main\java\pageobjects\pages" />
       <recent name="C:\Users\team2\IdeaProjects\Web_API_Mobile_framework\Mobile_Module\src\test\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -103,9 +122,7 @@
     <option name="myCommands">
       <command value="mvn test -DSuite=testng" />
       <command value="mvn clean test -Dtest=WebUI" />
-      <command value="mvn clean" />
       <command value="mvn clean test -Dtest=testng" />
-      <command value="mvn test" />
       <command value="mvn test -DDRIVER_TYPE=chrome" />
       <command value="mvn test -DDRIVER_TYPE=IE" />
       <command value="mvn test -DDRIVER=IE" />
@@ -114,9 +131,12 @@
       <command value="mvn test -DDRIVER_TYPE=FF" />
       <command value="mvn clean test -DDRIVER=FF" />
       <command value="mvn clean test -Dbrowser=FF" />
+      <command value="mvn clean" />
+      <command value="mvn build" />
+      <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ProposalsPageAccMgrValidation.verifyProposalsPage">
+  <component name="RunManager" selected="TestNG.C:/Users/team9/IdeaProjects/Spot_On_Automation_Framework/WEB_UI_Module/src/main/resources/CHROME.xml">
     <configuration name="C:/Users/team9/IdeaProjects/Spot_On_Automation_Framework/WEB_UI_Module/src/main/resources/CHROME.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WEB_UI_Module" />
       <shortenClasspath name="NONE" />
@@ -139,7 +159,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateCampaignAccMgrValidation.verifyCampaignCreation" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateCampaignValidation.verifyCampaignCreation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WEB_UI_Module" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -151,7 +171,7 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="test.CampaignPage" />
-      <option name="MAIN_CLASS_NAME" value="test.CampaignPage.CreateCampaignAccMgrValidation" />
+      <option name="MAIN_CLASS_NAME" value="test.CampaignPage.CreateCampaignValidation" />
       <option name="METHOD_NAME" value="verifyCampaignCreation" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
@@ -197,20 +217,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreativesPublisherValidation.verifyPreviewAndApproveCreativesPage" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ProposalsPageValidation.verifyProposalsPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WEB_UI_Module" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.CreativesPublisherPage.*" />
+          <option name="PATTERN" value="test.ProposalsPage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.CreativesPublisherPage" />
-      <option name="MAIN_CLASS_NAME" value="test.CreativesPublisherPage.CreativesPublisherValidation" />
-      <option name="METHOD_NAME" value="verifyPreviewAndApproveCreativesPage" />
+      <option name="PACKAGE_NAME" value="test.ProposalsPage" />
+      <option name="MAIN_CLASS_NAME" value="test.ProposalsPage.ProposalsPageValidation" />
+      <option name="METHOD_NAME" value="verifyProposalsPage" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
@@ -226,20 +246,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProposalsPageAccMgrValidation.verifyProposalsPage" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PublisherUserValidation.verifyPublisherUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WEB_UI_Module" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.ProposalsPage.*" />
+          <option name="PATTERN" value="test.PublisherUser.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.ProposalsPage" />
-      <option name="MAIN_CLASS_NAME" value="test.ProposalsPage.ProposalsPageAccMgrValidation" />
-      <option name="METHOD_NAME" value="verifyProposalsPage" />
+      <option name="PACKAGE_NAME" value="test.PublisherUser" />
+      <option name="MAIN_CLASS_NAME" value="test.PublisherUser.PublisherUserValidation" />
+      <option name="METHOD_NAME" value="verifyPublisherUser" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
@@ -277,19 +297,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.ProposalsPageAccMgrValidation.verifyProposalsPage" />
-      <item itemvalue="TestNG.CreateCampaignAccMgrValidation.verifyCampaignCreation" />
       <item itemvalue="TestNG.CreativesPageUIValidation.verifyCreativesPage" />
-      <item itemvalue="TestNG.CreativesPublisherValidation.verifyPreviewAndApproveCreativesPage" />
+      <item itemvalue="TestNG.ProposalsPageValidation.verifyProposalsPage" />
+      <item itemvalue="TestNG.CreateCampaignValidation.verifyCampaignCreation" />
       <item itemvalue="TestNG.C:/Users/team9/IdeaProjects/Spot_On_Automation_Framework/WEB_UI_Module/src/main/resources/CHROME.xml" />
+      <item itemvalue="TestNG.PublisherUserValidation.verifyPublisherUser" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ProposalsPageAccMgrValidation.verifyProposalsPage" />
         <item itemvalue="TestNG.C:/Users/team9/IdeaProjects/Spot_On_Automation_Framework/WEB_UI_Module/src/main/resources/CHROME.xml" />
-        <item itemvalue="TestNG.CreativesPublisherValidation.verifyPreviewAndApproveCreativesPage" />
+        <item itemvalue="TestNG.PublisherUserValidation.verifyPublisherUser" />
         <item itemvalue="TestNG.CreativesPageUIValidation.verifyCreativesPage" />
-        <item itemvalue="TestNG.CreateCampaignAccMgrValidation.verifyCampaignCreation" />
+        <item itemvalue="TestNG.CreateCampaignValidation.verifyCampaignCreation" />
+        <item itemvalue="TestNG.ProposalsPageValidation.verifyProposalsPage" />
       </list>
     </recent_temporary>
   </component>
@@ -301,13 +321,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627924201276</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Account Test Cases v2">
-      <created>1643466722059</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1643466722059</updated>
     </task>
     <task id="LOCAL-00063" summary="Account Test Cases v3">
       <created>1643736383273</created>
@@ -645,7 +658,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654617187684</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="Test Case V3">
+      <created>1656004051482</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1656004051485</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -663,7 +683,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/MyNavidGaid_automation" />
     </ignored-roots>
-    <MESSAGE value="Mobile Test cases v5" />
     <MESSAGE value="Mobile Test cases v6" />
     <MESSAGE value="Mobile Test cases v7" />
     <MESSAGE value="Mobile Test cases v8" />
@@ -688,7 +707,8 @@
     <MESSAGE value="Login test case" />
     <MESSAGE value="Login test case v1" />
     <MESSAGE value="Login test case v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login test case v2" />
+    <MESSAGE value="Test Case V3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test Case V3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/README_md$C__Users_team2_IdeaProjects_Web_API_Mobile_framework_WEB_UI_Module_src_main_resources_CHROME_xml.ic" NAME="$PROJECT_DIR$/../../../team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/CHROME.xml Coverage Results" MODIFIED="1654425684734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

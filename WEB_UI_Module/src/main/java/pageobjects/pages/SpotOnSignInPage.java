@@ -93,8 +93,14 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
     @Override
     public ISpotOnPublisherUser verifyPublisherProfile() {
 
-        String label = profileLabel.getText();
-        Assert.assertEquals(label,"Profile");
+        try {
+            Thread.sleep(3000);
+            String label = profileLabel.getText();
+            Assert.assertEquals(label, "Profile");
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
         return SpotOnPageFactory.verifyPublisherUser();
     }
 
@@ -117,5 +123,20 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
 
         creativesPublisher.click();
         return SpotOnPageFactory.getCreativesPublishersPage();
+    }
+
+    @Override
+    public ISpotOnTraffickerUser verifyTraffickerProfile() {
+
+        String label = profileLabel.getText();
+        Assert.assertEquals(label,"Profile");
+        return SpotOnPageFactory.verifyTraffickerUser();
+    }
+
+    @Override
+    public ISpotOnCampaignTraffickerUser clickOnCampaignBtn() {
+
+        campaigns.click();
+        return SpotOnPageFactory.getCampaignsPageTraffickerUser();
     }
 }

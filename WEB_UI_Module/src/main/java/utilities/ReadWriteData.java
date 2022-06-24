@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class ReadWriteData {
     private String str = "";
 
-    public String getStr() {
+    /*public String getStr() {
         try {
             File myObj = new File(".//config.properties");
             Scanner myReader = new Scanner(myObj);
@@ -34,5 +34,93 @@ public class ReadWriteData {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
+    }*/
+
+    static File file;
+    public void writeData(Properties p){
+
+        file = new File(".//config.properties");
+        FileOutputStream fos = null;
+        try {
+            fos = new FileOutputStream(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        try {
+            p.store(fos,"Properties");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            fos.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public String readData(Properties p){
+
+        file = new File(".//config.properties");
+        FileInputStream fis = null;
+        try {
+            fis = new FileInputStream(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        try {
+            p.load(fis);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        String proposalValue = p.getProperty("proposal");
+        try {
+            fis.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return proposalValue;
+    }
+
+    public void writeDataAM(Properties p){
+
+        file = new File(".//configAM.properties");
+        FileOutputStream fos = null;
+        try {
+            fos = new FileOutputStream(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        try {
+            p.store(fos,"Properties");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            fos.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public String readDataAM(Properties p){
+
+        file = new File(".//configAM.properties");
+        FileInputStream fis = null;
+        try {
+            fis = new FileInputStream(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        try {
+            p.load(fis);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        String proposalValueAM = p.getProperty("proposalAM");
+        try {
+            fis.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return proposalValueAM;
     }
 }

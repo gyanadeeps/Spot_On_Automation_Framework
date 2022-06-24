@@ -2,7 +2,9 @@ package pageobjects.pages;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
+import data.SystemProperties;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import pageobjects.PageFactoryClasses.SpotOnPageFactory;
 
@@ -11,6 +13,8 @@ import static com.codeborne.selenide.Selenide.$x;
 public class SpotOnEditPublisher implements ISpotOnEditPublisher {
 
     SelenideElement publishersLabel = $x("//label[text()='Publishers']");
+    SelenideElement search = $x("//input[@placeholder='Search']");
+    SelenideElement publisher = $x("//span[text()='"+ SystemProperties.SEARCH_KEY_PUBLISHERS+"']");
     SelenideElement publisherValue = $x("(//ion-row[2]//ion-col[1])[2]");
     SelenideElement addNewBtn = $x("//button[text()='Add New +']");
     SelenideElement unitName = $x("//tr[2]//input[@placeholder='Unit name']");
@@ -34,9 +38,18 @@ public class SpotOnEditPublisher implements ISpotOnEditPublisher {
     }
 
     @Override
+    public ISpotOnEditPublisher enterSearchKeyword(String searchKey) {
+
+        System.out.println("Publisher: "+searchKey);
+        search.sendKeys(searchKey);
+        search.sendKeys(Keys.ENTER);
+        return SpotOnPageFactory.getEditPublishersPage();
+    }
+
+    @Override
     public ISpotOnEditPublisher selectPublisher() {
 
-        publisherValue.click();
+        publisher.click();
         return SpotOnPageFactory.getEditPublishersPage();
     }
 

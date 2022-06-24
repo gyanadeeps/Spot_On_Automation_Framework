@@ -67,7 +67,13 @@ public class SpotOnUsersPage implements ISpotOnUsersPage {
     @Override
     public ISpotOnUsersPage clickOnInviteBtn() {
 
-        invite.click();
+        try {
+            Thread.sleep(3000);
+            invite.click();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         return SpotOnPageFactory.getUsersPage();
     }
 

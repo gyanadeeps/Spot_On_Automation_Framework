@@ -23,6 +23,7 @@ public class SpotOnEditPublisherImpl extends SpotOnLoginPage implements Feature
                     .clickOnLoginButton()
                     .clickOnPublishersBtn()
                     .verifyPublisherPage()
+                    .enterSearchKeyword(SystemProperties.SEARCH_KEY_PUBLISHERS)
                     .selectPublisher()
                     .clickAddNewBtn()
                     .enterUnitName(SystemProperties.UNIT_NAME)

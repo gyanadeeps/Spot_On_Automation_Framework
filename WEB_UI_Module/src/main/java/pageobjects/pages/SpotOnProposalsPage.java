@@ -1,21 +1,22 @@
 package pageobjects.pages;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.WebDriverRunner;
 import org.testng.Assert;
 import pageobjects.PageFactoryClasses.SpotOnPageFactory;
 import utilities.ReadWriteData;
 
-import java.time.Duration;
-import java.util.concurrent.TimeUnit;
+import java.io.File;
+import java.util.Properties;
 
 import static com.codeborne.selenide.Selenide.$x;
 
 public class SpotOnProposalsPage implements ISpotOnProposalsPage {
 
+    Properties p = new Properties();
+    Properties p1 = new Properties();
     ReadWriteData rwd = new ReadWriteData();
+
     SelenideElement proposalsLabel = $x("//label[text()='Proposals']");
     SelenideElement newProposalBtn = $x("//button[contains(text(),'New Proposal')]");
     SelenideElement proposalName = $x("//app-so-input[@label='Proposal Name']//input[contains(@class,'native-input')]");
@@ -48,8 +49,28 @@ public class SpotOnProposalsPage implements ISpotOnProposalsPage {
     @Override
     public ISpotOnProposalsPage enterProposalName(String propName) {
 
-        rwd.setStr(propName);
-        proposalName.sendKeys(rwd.getStr());
+
+        /*if(rwd.readDataAM(p) != null){
+            System.out.println("AM" + rwd.readDataAM(p));
+            p.setProperty("proposalAM",rwd.readDataAM(p));
+        }*/
+        System.out.println(propName);
+        p.setProperty("proposal",propName);
+        rwd.writeData(p);
+        proposalName.sendKeys(rwd.readData(p));
+        System.out.println(p);
+        return SpotOnPageFactory.getProposalsPage();
+    }
+
+    @Override
+    public ISpotOnProposalsPage enterProposalNameAM(String propNameAM) {
+
+        //if(rwd.readData(p) != null) p.setProperty("proposal",rwd.readData(p));
+        System.out.println(propNameAM);
+        p1.setProperty("proposalAM",propNameAM);
+        rwd.writeDataAM(p1);
+        proposalName.sendKeys(rwd.readDataAM(p1));
+        System.out.println(p1);
         return SpotOnPageFactory.getProposalsPage();
     }
 

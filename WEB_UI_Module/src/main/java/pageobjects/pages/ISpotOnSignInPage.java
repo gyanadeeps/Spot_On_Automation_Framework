@@ -17,5 +17,7 @@ public interface ISpotOnSignInPage
   ISpotOnCampaignPublisherUser clickOnCampaignsBtn();
   ISpotOnEditPublisher clickOnPublishersBtn();
   ISpotOnCreativesPublisherPage clickOnCreativesPublisherBtn();
+  ISpotOnTraffickerUser verifyTraffickerProfile();
+  ISpotOnCampaignTraffickerUser clickOnCampaignBtn();
 
 }

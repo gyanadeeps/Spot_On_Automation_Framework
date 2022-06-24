@@ -47,7 +47,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
     public ISpotOnCreateCampaign enterSearchKeyword(String searchKey) {
 
        // String s = rwd.getStr();
-       // System.out.println("Campaign Key:"+s);
+        System.out.println("Campaign Key:"+searchKey);
         search.sendKeys(searchKey);
         search.sendKeys(Keys.ENTER);
         return SpotOnPageFactory.getCampaign();

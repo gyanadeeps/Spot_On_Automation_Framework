@@ -71,4 +71,16 @@ public class SpotOnPageFactory extends PageFactory
         return wrap(new SpotOnCreativesPublisherPage(), ISpotOnCreativesPublisherPage.class);
     }
 
+    public static ISpotOnCampaignTraffickerUser getCampaignsPageTraffickerUser()
+    {
+
+        return wrap(new SpotOnCampaignTraffickerUser(), ISpotOnCampaignTraffickerUser.class);
+    }
+
+    public static ISpotOnTraffickerUser verifyTraffickerUser()
+    {
+
+        return wrap(new SpotOnTraffickerUser(), ISpotOnTraffickerUser.class);
+    }
+
 }
