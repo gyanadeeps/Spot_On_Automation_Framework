@@ -4,8 +4,11 @@ import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
 import data.SystemProperties;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import pageobjects.PageFactoryClasses.SpotOnPageFactory;
 import utilities.ReadWriteData;
@@ -15,7 +18,8 @@ import static com.codeborne.selenide.Selenide.$x;
 public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
 
 
-
+    WebDriverWait wait = new WebDriverWait(WebDriverRunner.getWebDriver(),20);
+    SelenideElement buyBtn = (SelenideElement) wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ion-checkbox[contains(@class,'ng-valid')]")));
     SelenideElement proposalsLabel = $x("//label[text()='Proposals']");
     SelenideElement search = $x("//input[@placeholder='Search']");
     SelenideElement proposal = $x("//span[text()='"+ SystemProperties.campaignKey+"']");
@@ -29,7 +33,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
     SelenideElement downIcon = $x("//ion-row[2]//ion-col[4]//ion-icon[3]");
     SelenideElement desiredImpressions = $x("//td[7]/ion-input[@placeholder='0']//input");
     SelenideElement allocatedBudget = $x("//td[8]/ion-input[@placeholder='0']//input");
-    SelenideElement buyBtn = $x("(//ion-checkbox[contains(@class,'ng-valid')])[1]");
+    //SelenideElement buyBtn = $x("(//ion-checkbox[contains(@class,'ng-valid')])[1]");
     SelenideElement updateBtn = $x("//body/app-root[1]/ion-app[1]/ion-router-outlet[1]/app-home[1]/ion-split-pane[1]/ion-router-outlet[1]/app-proposal[1]/ion-content[1]/ion-router-outlet[1]/app-create-proposal[1]/ion-content[1]/form[1]/app-base-entity-action-buttons[1]/div[1]/div[1]/div[1]/div[1]/app-so-button[1]/div[1]");
     SelenideElement createNewCampaignBtn = $x("//button[text()='Create New Campaign ']");
     SelenideElement noBtn = $x("//button//span[text()='No']");
@@ -121,6 +125,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
     public ISpotOnCreateCampaign clickSaveChangesBtn() {
         try {
 
+
             Thread.sleep(5000);
             saveChangesBtn.scrollIntoView(true).click();
 
@@ -159,8 +164,9 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
     @Override
     public ISpotOnCreateCampaign selectBuyBtn() {
 
-        //buyBtn.click();
-        Selenide.executeJavaScript("arguments[0].click();",buyBtn);
+
+        buyBtn.click();
+        //Selenide.executeJavaScript("arguments[0].click();",buyBtn);
         return SpotOnPageFactory.getCampaign();
     }
 
