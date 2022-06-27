@@ -83,10 +83,10 @@ public interface SystemProperties {
 
     //String creativeKey = System.getProperty("CreativeKey","R08tC Automation");
     String creativeKey = System.getProperty("CreativeKey",rwd.readData(p));
-    String creativeKeyAM = System.getProperty("CreativeKeyAM",campaignKeyAM);
+    String creativeKeyAM = System.getProperty("CreativeKeyAM",rwd.readDataAM(p1));
 
-    String SEARCH_KEY_PROPOSALS = System.getProperty("SearchKeyProposals",campaignKey);
-    String SEARCH_KEY_PROPOSALS_AM = System.getProperty("SearchKeyProposalsAM",campaignKeyAM);
+    String SEARCH_KEY_PROPOSALS = System.getProperty("SearchKeyProposals",rwd.readData(p));
+    String SEARCH_KEY_PROPOSALS_AM = System.getProperty("SearchKeyProposalsAM",rwd.readDataAM(p1));
     String DESIRED_IMPRESSIONS = System.getProperty("DesiredImpressions", "1000");
     String ALLOCATED_BUDGET = System.getProperty("AllocatedBudget","10");
 
