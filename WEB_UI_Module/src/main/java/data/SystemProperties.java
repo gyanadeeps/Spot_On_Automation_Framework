@@ -82,7 +82,7 @@ public interface SystemProperties {
     String campaignKeyAM = System.getProperty("CampaignKeyAM",rwd.readDataAM(p1));
 
     //String creativeKey = System.getProperty("CreativeKey","R08tC Automation");
-    String creativeKey = System.getProperty("CreativeKey",campaignKey);
+    String creativeKey = System.getProperty("CreativeKey",rwd.readData(p));
     String creativeKeyAM = System.getProperty("CreativeKeyAM",campaignKeyAM);
 
     String SEARCH_KEY_PROPOSALS = System.getProperty("SearchKeyProposals",campaignKey);
