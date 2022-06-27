@@ -22,7 +22,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
     SelenideElement description = $x("//textarea[contains(@class,'sc-ion-textarea-md')]");
     SelenideElement searchAndSelectPublisher = $x("//button[text()='+ Search and Select a Publisher ']");
     SelenideElement addNationalPublisher = $x("//button[text()='+ Add More National Publishers? ']");
-    SelenideElement publisher = $x("//span[text()='Achin Test June']");
+    SelenideElement publisher = $x("//ion-row[2]//ion-checkbox");
     SelenideElement useChosenBtn = $x("//button[text()=' Use Chosen ']");
     SelenideElement saveChangesBtn = $x("//app-so-button[@class='save-changes']//button[text()=' Save Changes']");
     SelenideElement downIcon = $x("//ion-row[2]//ion-col[4]//ion-icon[3]");
