@@ -1,5 +1,6 @@
 package pageobjects.pages;
 
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
 import data.SystemProperties;
@@ -143,14 +144,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
     @Override
     public ISpotOnCreateCampaign enterDesiredImpressions(String desiredValue) {
 
-        try {
-
-            desiredImpressions.sendKeys(desiredValue);
-            Thread.sleep(3000);
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
+        desiredImpressions.sendKeys(desiredValue);
 
         return SpotOnPageFactory.getCampaign();
     }
@@ -165,13 +159,8 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
     @Override
     public ISpotOnCreateCampaign selectBuyBtn() {
 
-        try {
-            Thread.sleep(3000);
-            buyBtn.click();
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
+        //buyBtn.click();
+        Selenide.executeJavaScript("arguments[0].click();",buyBtn);
         return SpotOnPageFactory.getCampaign();
     }
 
