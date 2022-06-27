@@ -157,7 +157,13 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
     @Override
     public ISpotOnCreateCampaign selectBuyBtn() {
 
-        buyBtn.click();
+        try {
+            Thread.sleep(3000);
+            buyBtn.click();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
         return SpotOnPageFactory.getCampaign();
     }
 
