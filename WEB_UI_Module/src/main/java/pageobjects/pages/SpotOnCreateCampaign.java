@@ -143,7 +143,15 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
     @Override
     public ISpotOnCreateCampaign enterDesiredImpressions(String desiredValue) {
 
-        desiredImpressions.sendKeys(desiredValue);
+        try {
+
+            desiredImpressions.sendKeys(desiredValue);
+            Thread.sleep(3000);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+
         return SpotOnPageFactory.getCampaign();
     }
 
