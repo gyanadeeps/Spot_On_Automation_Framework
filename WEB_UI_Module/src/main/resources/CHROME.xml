@@ -52,7 +52,7 @@
 
     </test>
 
-
+<!--
     <test name="Spot On Edit Publisher Page Validation">
         <classes>
             <class name="test.PublishersPage.EditPublisherValidation"/>
@@ -114,5 +114,5 @@
 
     </test>
 
-
+-->
 </suite> <!-- Suite -->
