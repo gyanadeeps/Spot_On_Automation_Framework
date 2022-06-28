@@ -13,7 +13,7 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
     SelenideElement email = $x("//input[@type='text']");
     SelenideElement login_btn = $x("//button[text()='Login']");
     SelenideElement password = $x("//input[@type='password']");
-    SelenideElement proposals = $x("//ion-label[text()=' Proposals ']");
+    SelenideElement proposals = $x("//ion-menu-toggle[@class='md hydrated']//ion-label[text()=' Proposals ']");
     SelenideElement publishers = $x("//ion-label[text()=' Publishers ']");
     SelenideElement creatives = $x("//ion-label[text()=' Creatives ']");
     SelenideElement clients = $x("//ion-label[text()=' Clients ']");

@@ -20,9 +20,8 @@ import static com.codeborne.selenide.Selenide.$x;
 public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
 
 
-    WebDriverWait wait = new WebDriverWait(WebDriverRunner.getWebDriver(),20);
-    SelenideElement buyBtn = (SelenideElement) wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ion-checkbox[contains(@class,'ng-valid')]")));
 
+    SelenideElement buyBtn = $x("//ion-checkbox[contains(@class,'ng-valid')]");
     SelenideElement proposalsLabel = $x("//label[text()='Proposals']");
     SelenideElement search = $x("//input[@placeholder='Search']");
     SelenideElement proposal = $x("//span[text()='"+ SystemProperties.campaignKey+"']");
@@ -168,6 +167,8 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
     @Override
     public ISpotOnCreateCampaign selectBuyBtn() {
 
+        WebDriverWait wait = new WebDriverWait(WebDriverRunner.getWebDriver(),20);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ion-checkbox[contains(@class,'ng-valid')]")));
 
         buyBtn.click();
         //Selenide.executeJavaScript("arguments[0].click();",buyBtn);

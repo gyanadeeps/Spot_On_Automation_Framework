@@ -10,12 +10,9 @@
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/Artifacts/failedScreenshots/verifyCampaignCreation.png" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/Artifacts/failedScreenshots/verifyCampaignCreation.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/configAM.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/configAM.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/ImplementationClasses/SpotOnCreativesPageCreatMgrImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/ImplementationClasses/SpotOnCreativesPageCreatMgrImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/ImplementationClasses/SpotOnProposalsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/ImplementationClasses/SpotOnProposalsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/data/SystemProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/data/SystemProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnCreateCampaign.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnCreateCampaign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnCreativesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnCreativesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnCreativesPublisherPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnCreativesPublisherPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnSignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnSignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/CHROME.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/CHROME.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/ImplementationClasses/SpotOnCreateCampaignImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/ImplementationClasses/SpotOnCreateCampaignImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/ImplementationClasses/SpotOnCreativesPageCreatMgrImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/ImplementationClasses/SpotOnCreativesPageCreatMgrImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/ImplementationClasses/SpotOnProposalsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/ImplementationClasses/SpotOnProposalsImpl.class" afterDir="false" />
@@ -300,34 +297,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627924201276</updated>
-    </task>
-    <task id="LOCAL-00073" summary="Account Test Cases v13">
-      <created>1645369845102</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1645369845102</updated>
-    </task>
-    <task id="LOCAL-00074" summary="Account Test Cases v14">
-      <created>1645457487330</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1645457487331</updated>
-    </task>
-    <task id="LOCAL-00075" summary="new Changes in pom.xml">
-      <created>1645462977334</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1645462977334</updated>
-    </task>
-    <task id="LOCAL-00076" summary="new Changes in pom.xml v1">
-      <created>1645466134812</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1645466134812</updated>
     </task>
     <task id="LOCAL-00077" summary="new Changes in pom.xml v2">
       <created>1645468522717</created>
@@ -644,7 +613,35 @@
       <option name="project" value="LOCAL" />
       <updated>1656352833980</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="Test Case V4">
+      <created>1656430442750</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1656430442751</updated>
+    </task>
+    <task id="LOCAL-00123" summary="Test Case V4">
+      <created>1656432352471</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1656432352471</updated>
+    </task>
+    <task id="LOCAL-00124" summary="Test Case V4">
+      <created>1656432916169</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1656432916169</updated>
+    </task>
+    <task id="LOCAL-00125" summary="Test Case V4">
+      <created>1656433596509</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1656433596510</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
