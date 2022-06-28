@@ -87,7 +87,7 @@ public interface SystemProperties {
 
     String SEARCH_KEY_PROPOSALS = System.getProperty("SearchKeyProposals",rwd.readData(p));
     String SEARCH_KEY_PROPOSALS_AM = System.getProperty("SearchKeyProposalsAM",rwd.readDataAM(p1));
-    String DESIRED_IMPRESSIONS = System.getProperty("DesiredImpressions", "1000");
+    String DESIRED_IMPRESSIONS = System.getProperty("DesiredImpressions", "100");
     String ALLOCATED_BUDGET = System.getProperty("AllocatedBudget","10");
 
     //String STATE_NAME = System.getProperty("StateName","California ");
