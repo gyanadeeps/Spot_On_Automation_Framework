@@ -184,7 +184,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
             updateBtn.click();
             Thread.sleep(5000);
 
-            noBtn.click();
+            Selenide.executeJavaScript("arguments[0].click;",noBtn);
             Thread.sleep(5000);
         }
         catch (Exception e)
