@@ -21,7 +21,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
 
 
 
-    SelenideElement buyBtn = $x("//ion-checkbox[contains(@class,'ng-valid')]");
+    SelenideElement buyBtn = $x("//ion-checkbox[@role='checkbox']");
     SelenideElement proposalsLabel = $x("//label[text()='Proposals']");
     SelenideElement search = $x("//input[@placeholder='Search']");
     SelenideElement proposal = $x("//span[text()='"+ SystemProperties.campaignKey+"']");
@@ -152,6 +152,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
     @Override
     public ISpotOnCreateCampaign enterDesiredImpressions(String desiredValue) {
 
+        desiredImpressions.clear();
         desiredImpressions.sendKeys(desiredValue);
 
         return SpotOnPageFactory.getCampaign();
@@ -168,7 +169,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
     public ISpotOnCreateCampaign selectBuyBtn() {
 
         WebDriverWait wait = new WebDriverWait(WebDriverRunner.getWebDriver(),20);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ion-checkbox[contains(@class,'ng-valid')]")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ion-checkbox[@role='checkbox']")));
 
         buyBtn.click();
         //Selenide.executeJavaScript("arguments[0].click();",buyBtn);
@@ -181,9 +182,10 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
         try {
 
             updateBtn.click();
-            Thread.sleep(7000);
+            Thread.sleep(5000);
+
             noBtn.click();
-            Thread.sleep(7000);
+            Thread.sleep(5000);
         }
         catch (Exception e)
         {
