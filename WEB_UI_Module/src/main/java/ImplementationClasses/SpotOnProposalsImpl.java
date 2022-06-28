@@ -27,11 +27,11 @@ public class SpotOnProposalsImpl extends SpotOnLoginPage implements Feature {
                     .enterStartDate(SystemProperties.START_DATE)
                     .enterEndDate(SystemProperties.END_DATE)
                     .enterClickTagURL(SystemProperties.WEB_URL)
-                    .clickSelectPublisherBtn()
+                   /* .clickSelectPublisherBtn()
                     .clickAddMoreLocalPublisherBtn()
                     .selLocalPublishers()
                     .clickUseChosenBtn()
-                    .clickSaveChangesBtn()
+                    .clickSaveChangesBtn()*/
                     .clickSaveBtn();
         } catch (Exception exception) {
             exception.printStackTrace();

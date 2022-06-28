@@ -13,13 +13,15 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class SpotOnCreativesPage implements ISpotOnCreativesPage{
 
-    WebDriverWait wait = new WebDriverWait(WebDriverRunner.getWebDriver(),20);
-    SelenideElement campaignValue = (SelenideElement) wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[text()='"+ SystemProperties.creativeKey+"']")));
+    //WebDriverWait wait = new WebDriverWait(WebDriverRunner.getWebDriver(),10);
+    //SelenideElement campaignValue = (SelenideElement) wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[text()='"+ SystemProperties.creativeKey+"']")));
+    //SelenideElement campaignValue = $x("//p[text()= 'c0rxomK Automation']");
     SelenideElement creativesLabel = $x("//label[text()='Creatives']");
     SelenideElement newCreativeBtn = $x("//button[text()='+ New creative']");
     SelenideElement campaign = $x("//app-so-input[@label='Campaign']//input");
-    //SelenideElement campaignValue = $x("//p[text()='"+ SystemProperties.creativeKey+"']");
+    SelenideElement campaignValue = $x("//p[text()='"+ SystemProperties.creativeKey+"']");
     SelenideElement campaignValueAM = $x("//p[text()='"+ SystemProperties.creativeKeyAM+"']");
+    //SelenideElement campaignValueAM = $x("//p[text()='vHifxVT Automation']");
     SelenideElement name = $x("//app-so-input[@label='Name']//input");
     SelenideElement clickTagURL = $x("//app-so-input[@label='ClickTag URL']//input");
     SelenideElement format = $x("//ion-select[@aria-label='Format *']");
@@ -49,6 +51,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage{
     @Override
     public ISpotOnCreativesPage enterCampaign(String campValue) {
 
+        System.out.println("Campaign Value "+campValue);
         campaign.sendKeys(campValue);
         campaignValue.click();
         return SpotOnPageFactory.getCreativesPage();

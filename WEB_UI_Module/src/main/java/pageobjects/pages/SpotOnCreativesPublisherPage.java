@@ -29,6 +29,7 @@ public class SpotOnCreativesPublisherPage implements ISpotOnCreativesPublisherPa
     @Override
     public ISpotOnCreativesPublisherPage enterSearchKeyword(String searchKey) {
 
+        System.out.println(searchKey);
         search.sendKeys(searchKey);
         search.sendKeys(Keys.ENTER);
         return SpotOnPageFactory.getCreativesPublishersPage();

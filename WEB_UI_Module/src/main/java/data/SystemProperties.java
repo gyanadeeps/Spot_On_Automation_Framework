@@ -93,11 +93,11 @@ public interface SystemProperties {
     //String STATE_NAME = System.getProperty("StateName","California ");
 
     //Creative Page Details
-    String CAMPAIGN = System.getProperty("Campaign",creativeKey);
-    String CAMPAIGN_AM = System.getProperty("CampaignAM",creativeKeyAM);
-    String CREATIVE_NAME = System.getProperty("CreativeName",creativeKey+" Creative");
-    String CREATIVE_NAME_CM = System.getProperty("CreativeNameCM",creativeKeyAM+" Creative");
-
+    String CAMPAIGN = System.getProperty("Campaign",rwd.readData(p));
+    String CAMPAIGN_AM = System.getProperty("CampaignAM",rwd.readData(p1));
+    String CREATIVE_NAME = System.getProperty("CreativeName",rwd.readData(p)+" Creative");
+    String CREATIVE_NAME_CM = System.getProperty("CreativeNameCM",rwd.readData(p1)+" Creative");
+    //atp4Hsn Automation Creative
 
     //Client Page Details
     String COMPANY_NAME = System.getProperty("CompanyName",randomString()+" Automation");
@@ -120,7 +120,7 @@ public interface SystemProperties {
     String LAST_NAME = System.getProperty("LastName",randomString());
 
     //Creatives Publisher Page
-    String SEARCH_KEY_CREATIVES = System.getProperty("SearchKeyCreatives",creativeKey+" Creative");
+    String SEARCH_KEY_CREATIVES = System.getProperty("SearchKeyCreatives",rwd.readData(p)+" Creative");
 
     private static String randomString() {
         return RandomStringUtils.randomAlphanumeric(7);

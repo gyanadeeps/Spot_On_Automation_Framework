@@ -29,6 +29,7 @@ public class SpotOnCreativesPageCreatMgrImpl extends SpotOnLoginPage implements 
                     .selectSize()
                     .selectFile()
                     .clickAddToQueueBtn()
+                    .clickSendCreativesForReviewBtn()
             ;
         } catch (Exception exception) {
             exception.printStackTrace();
