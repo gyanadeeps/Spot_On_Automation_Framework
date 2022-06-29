@@ -214,7 +214,7 @@ public class ApplicationData {
     }
 
     public String CAMPAIGN_AM() {
-        String campaignAM = rwd.readData(p1);
+        String campaignAM = rwd.readDataAM(p1);
         return campaignAM;
     }
 
