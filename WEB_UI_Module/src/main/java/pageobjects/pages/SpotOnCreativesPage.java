@@ -10,11 +10,16 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import pageobjects.PageFactoryClasses.SpotOnPageFactory;
+import utilities.ReadWriteData;
+
+import java.util.Properties;
 
 import static com.codeborne.selenide.Selenide.$x;
 
 public class SpotOnCreativesPage implements ISpotOnCreativesPage {
 
+    Properties p = new Properties();
+    ReadWriteData rwd = new ReadWriteData();
     ApplicationData ad = new ApplicationData();
     //WebDriverWait wait = new WebDriverWait(WebDriverRunner.getWebDriver(),10);
     //SelenideElement campaignValue = (SelenideElement) wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[text()='"+ SystemProperties.creativeKey+"']")));
@@ -23,7 +28,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage {
     SelenideElement newCreativeBtn = $x("//button[text()='+ New creative']");
     SelenideElement campaign = $x("//app-so-input[@label='Campaign']//input");
     SelenideElement campaignValue = $x("//p[text()='" + ad.CREATIVE_KEY() + "']");
-    SelenideElement campaignValueAM = $x("//p[text()='" + ad.CREATIVE_KEY_AM() + "']");
+    SelenideElement campaignValueAM = $x("//p[text()='" + rwd.readDataAM(p) + "']");
     //SelenideElement campaignValueAM = $x("//p[text()='vHifxVT Automation']");
     SelenideElement name = $x("//app-so-input[@label='Name']//input");
     SelenideElement clickTagURL = $x("//app-so-input[@label='ClickTag URL']//input");

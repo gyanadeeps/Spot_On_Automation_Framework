@@ -16,10 +16,12 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class SpotOnEditPublisher implements ISpotOnEditPublisher {
 
+    Properties p = new Properties();
+    ReadWriteData rwd = new ReadWriteData();
     ApplicationData ad = new ApplicationData();
     SelenideElement publishersLabel = $x("//label[text()='Publishers']");
     SelenideElement search = $x("//input[@placeholder='Search']");
-    SelenideElement publisher = $x("//span[text()='" + ad.SEARCH_KEY_PUBLISHERS() + "']");
+    SelenideElement publisher = $x("//span[text()='" + rwd.readPublisher(p) + "']");
     SelenideElement publisherValue = $x("(//ion-row[2]//ion-col[1])[2]");
     SelenideElement addNewBtn = $x("//button[text()='Add New +']");
     SelenideElement unitName = $x("//tr[2]//input[@placeholder='Unit name']");
