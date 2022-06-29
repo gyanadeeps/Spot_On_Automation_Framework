@@ -2,11 +2,13 @@ package ImplementationClasses;
 
 import BaseClasses.Feature;
 import BaseClasses.SpotOnLoginPage;
+import data.ApplicationData;
 import data.SystemProperties;
 import pageobjects.pages.ISpotOnSignInPage;
 
 public class SpotOnClientsImpl  extends SpotOnLoginPage implements Feature
 {
+    ApplicationData ad = new ApplicationData();
     private ISpotOnSignInPage homePage;
     @Override
     public void init()
@@ -18,18 +20,18 @@ public class SpotOnClientsImpl  extends SpotOnLoginPage implements Feature
     public void execute() {
         try {
 
-            homePage.enterEmail(SystemProperties.USERNAME)
-                    .enterPassword(SystemProperties.PASSWORD)
+            homePage.enterEmail(ad.USERNAME())
+                    .enterPassword(ad.PASSWORD())
                     .clickOnLoginButton().clickOnClientsBtn()
                     .verifyClientsPage()
                     .clickNewClientsBtn()
-                    .enterCompanyName(SystemProperties.COMPANY_NAME)
-                    .enterDescription(SystemProperties.DESCRIPTION_CLIENTS)
-                    .enterContactName(SystemProperties.CONTACT_NAME)
-                    .enterContactPhone(SystemProperties.CONTACT_PHONE)
-                    .enterContactEmail(SystemProperties.CONTACT_EMAIL)
-                    .enterStreetAddress(SystemProperties.STREET_ADDRESS)
-                    .enterCity(SystemProperties.CITY_CLIENT)
+                    .enterCompanyName(ad.COMPANY_NAME())
+                    .enterDescription(ad.DESCRIPTION_CLIENTS())
+                    .enterContactName(ad.CONTACT_NAME())
+                    .enterContactPhone(ad.CONTACT_PHONE())
+                    .enterContactEmail(ad.CONTACT_EMAIL())
+                    .enterStreetAddress(ad.STREET_ADDRESS())
+                    .enterCity(ad.CITY_CLIENT())
                     .selectState()
                     .clickSaveBtn();
         } catch (Exception exception) {

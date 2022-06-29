@@ -7,10 +7,16 @@ import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import pageobjects.PageFactoryClasses.SpotOnPageFactory;
+import utilities.ReadWriteData;
+
+import java.util.Properties;
+
 import static com.codeborne.selenide.Selenide.*;
 
 public class SpotOnPublishersPage implements ISpotOnPublishersPage {
 
+    Properties p = new Properties();
+    ReadWriteData rwd = new ReadWriteData();
     SelenideElement publishersLabel = $x("//label[text()='Publishers']");
     SelenideElement newPublisherBtn = $x("//button[text()=' + New Publisher ']");
     SelenideElement publisherName = $x("//app-so-input[@label='Publisher Name']//input[contains(@class,'native-input')]");
@@ -55,6 +61,8 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
     public ISpotOnPublishersPage enterPublisherName(String publisher) {
 
         System.out.println("Publisher:" +publisher);
+        p.setProperty("publisher",publisher);
+        rwd.writePublisher(p);
         publisherName.sendKeys(publisher);
         return SpotOnPageFactory.getPublishersPage();
     }

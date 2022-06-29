@@ -3,24 +3,27 @@ package pageobjects.pages;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
+import data.ApplicationData;
 import data.SystemProperties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import pageobjects.PageFactoryClasses.SpotOnPageFactory;
+
 import static com.codeborne.selenide.Selenide.$x;
 
-public class SpotOnCreativesPage implements ISpotOnCreativesPage{
+public class SpotOnCreativesPage implements ISpotOnCreativesPage {
 
+    ApplicationData ad = new ApplicationData();
     //WebDriverWait wait = new WebDriverWait(WebDriverRunner.getWebDriver(),10);
     //SelenideElement campaignValue = (SelenideElement) wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[text()='"+ SystemProperties.creativeKey+"']")));
     //SelenideElement campaignValue = $x("//p[text()= 'c0rxomK Automation']");
     SelenideElement creativesLabel = $x("//label[text()='Creatives']");
     SelenideElement newCreativeBtn = $x("//button[text()='+ New creative']");
     SelenideElement campaign = $x("//app-so-input[@label='Campaign']//input");
-    SelenideElement campaignValue = $x("//p[text()='"+ SystemProperties.creativeKey+"']");
-    SelenideElement campaignValueAM = $x("//p[text()='"+ SystemProperties.creativeKeyAM+"']");
+    SelenideElement campaignValue = $x("//p[text()='" + ad.CREATIVE_KEY() + "']");
+    SelenideElement campaignValueAM = $x("//p[text()='" + ad.CREATIVE_KEY_AM() + "']");
     //SelenideElement campaignValueAM = $x("//p[text()='vHifxVT Automation']");
     SelenideElement name = $x("//app-so-input[@label='Name']//input");
     SelenideElement clickTagURL = $x("//app-so-input[@label='ClickTag URL']//input");
@@ -37,7 +40,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage{
     public ISpotOnCreativesPage verifyCreativesPage() {
 
         String label = creativesLabel.getText();
-        Assert.assertEquals(label,"Creatives");
+        Assert.assertEquals(label, "Creatives");
         return SpotOnPageFactory.getCreativesPage();
     }
 
@@ -51,7 +54,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage{
     @Override
     public ISpotOnCreativesPage enterCampaign(String campValue) {
 
-        System.out.println("Campaign Value "+campValue);
+        System.out.println("Campaign Value " + campValue);
         campaign.sendKeys(campValue);
         campaignValue.click();
         return SpotOnPageFactory.getCreativesPage();
@@ -69,7 +72,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage{
     @Override
     public ISpotOnCreativesPage enterName(String nameValue) {
 
-        System.out.println("Creative: " +nameValue);
+        System.out.println("Creative: " + nameValue);
         name.sendKeys(nameValue);
         return SpotOnPageFactory.getCreativesPage();
     }
@@ -124,12 +127,11 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage{
             robot.keyRelease(KeyEvent.VK_ENTER);*/
 
             Thread.sleep(5000);
-            String s= System.getProperty("user.dir")+"/test1.jpg";
-            System.out.println("path: " +s);
+            String s = System.getProperty("user.dir") + "/test1.jpg";
+            System.out.println("path: " + s);
             selectFile.scrollIntoView(true).sendKeys(s);
             Thread.sleep(5000);
-        }
-        catch (Exception e){
+        } catch (Exception e) {
 
             e.printStackTrace();
         }
@@ -145,8 +147,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage{
             Thread.sleep(5000);
             addToQueue.scrollIntoView(true).click();
             Thread.sleep(7000);
-        }
-        catch (Exception e){
+        } catch (Exception e) {
 
             e.printStackTrace();
         }
@@ -160,8 +161,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage{
             Thread.sleep(3000);
             sendCreativesForReviewBtn.click();
             Thread.sleep(3000);
-        }
-        catch (Exception e){
+        } catch (Exception e) {
 
             e.printStackTrace();
         }

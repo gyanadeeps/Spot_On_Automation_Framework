@@ -123,4 +123,47 @@ public class ReadWriteData {
         }
         return proposalValueAM;
     }
+
+    public void writePublisher(Properties p){
+
+        file = new File(".//configPublisher.properties");
+        FileOutputStream fos = null;
+        try {
+            fos = new FileOutputStream(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        try {
+            p.store(fos,"Properties");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            fos.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public String readPublisher(Properties p){
+
+        file = new File(".//configPublisher.properties");
+        FileInputStream fis = null;
+        try {
+            fis = new FileInputStream(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        try {
+            p.load(fis);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        String publisher = p.getProperty("publisher");
+        try {
+            fis.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return publisher;
+    }
 }

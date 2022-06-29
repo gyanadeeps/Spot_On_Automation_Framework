@@ -2,10 +2,13 @@ package ImplementationClasses;
 
 import BaseClasses.Feature;
 import BaseClasses.SpotOnLoginPage;
+import data.ApplicationData;
 import data.SystemProperties;
 import pageobjects.pages.ISpotOnSignInPage;
 
 public class SpotOnProposalsImpl extends SpotOnLoginPage implements Feature {
+
+    ApplicationData ad = new ApplicationData();
     private ISpotOnSignInPage homePage;
     @Override
     public void init() {
@@ -17,16 +20,16 @@ public class SpotOnProposalsImpl extends SpotOnLoginPage implements Feature {
     public void execute() {
         try {
 
-            homePage.enterEmail(SystemProperties.USERNAME)
-                    .enterPassword(SystemProperties.PASSWORD)
+            homePage.enterEmail(ad.USERNAME())
+                    .enterPassword(ad.PASSWORD())
                     .clickOnLoginButton().clickOnProposalsButton()
                     .verifyProposalsPage().clickOnNewProposalBtn()
-                    .enterProposalName(SystemProperties.PROPOSAL_NAME)
-                    .enterDescription(SystemProperties.DESCRIPTION)
+                    .enterProposalName(ad.PROPOSAL_NAME())
+                    .enterDescription(ad.DESCRIPTION())
                     .selCampaignType()
-                    .enterStartDate(SystemProperties.START_DATE)
-                    .enterEndDate(SystemProperties.END_DATE)
-                    .enterClickTagURL(SystemProperties.WEB_URL)
+                    .enterStartDate(ad.START_DATE())
+                    .enterEndDate(ad.END_DATE())
+                    .enterClickTagURL(ad.WEB_URL())
                    /* .clickSelectPublisherBtn()
                     .clickAddMoreLocalPublisherBtn()
                     .selLocalPublishers()

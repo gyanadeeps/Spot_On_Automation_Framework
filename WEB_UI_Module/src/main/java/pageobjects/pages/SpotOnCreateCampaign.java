@@ -3,6 +3,7 @@ package pageobjects.pages;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
+import data.ApplicationData;
 import data.SystemProperties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -20,12 +21,14 @@ import static com.codeborne.selenide.Selenide.$x;
 public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
 
 
-
+    Properties p = new Properties();
+    ReadWriteData rwd = new ReadWriteData();
+    ApplicationData ad = new ApplicationData();
     SelenideElement buyBtn = $x("//ion-checkbox[@role='checkbox']");
     SelenideElement proposalsLabel = $x("//label[text()='Proposals']");
     SelenideElement search = $x("//input[@placeholder='Search']");
-    SelenideElement proposal = $x("//span[text()='"+ SystemProperties.campaignKey+"']");
-    SelenideElement proposalAM = $x("//span[text()='"+ SystemProperties.campaignKeyAM+"']");
+    SelenideElement proposal = $x("//span[text()='"+ rwd.readData(p)+"']");
+    SelenideElement proposalAM = $x("//span[text()='"+ ad.CAMPAIGN_KEY_AM()+"']");
     SelenideElement description = $x("//textarea[contains(@class,'sc-ion-textarea-md')]");
     SelenideElement searchAndSelectPublisher = $x("//button[text()='+ Search and Select a Publisher ']");
     SelenideElement addNationalPublisher = $x("//button[text()='+ Add More National Publishers? ']");
@@ -183,8 +186,8 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
 
             updateBtn.click();
             Thread.sleep(5000);
-
-            Selenide.executeJavaScript("arguments[0].click;",noBtn);
+            noBtn.click();
+            //Selenide.executeJavaScript("arguments[0].click;",noBtn);
             Thread.sleep(5000);
         }
         catch (Exception e)

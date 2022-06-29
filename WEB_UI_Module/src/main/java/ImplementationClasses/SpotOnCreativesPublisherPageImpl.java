@@ -2,11 +2,13 @@ package ImplementationClasses;
 
 import BaseClasses.Feature;
 import BaseClasses.SpotOnLoginPage;
+import data.ApplicationData;
 import data.SystemProperties;
 import pageobjects.pages.ISpotOnSignInPage;
 
 public class SpotOnCreativesPublisherPageImpl extends SpotOnLoginPage implements Feature
 {
+    ApplicationData ad = new ApplicationData();
     private ISpotOnSignInPage homePage;
     @Override
     public void init()
@@ -18,12 +20,12 @@ public class SpotOnCreativesPublisherPageImpl extends SpotOnLoginPage implements
     public void execute() {
         try {
 
-            homePage.enterEmail(SystemProperties.USERNAME)
-                    .enterPassword(SystemProperties.PASSWORD)
+            homePage.enterEmail(ad.USERNAME())
+                    .enterPassword(ad.PASSWORD())
                     .clickOnLoginButton()
                     .clickOnCreativesPublisherBtn()
                     .verifyCreativesPublisherPage()
-                    .enterSearchKeyword(SystemProperties.SEARCH_KEY_CREATIVES)
+                    .enterSearchKeyword(ad.SEARCH_KEY_CREATIVES())
                     .clickPreviewBtn()
                     .clickApproveBtn();
         } catch (Exception exception) {

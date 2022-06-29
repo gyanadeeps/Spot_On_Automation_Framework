@@ -2,10 +2,13 @@ package ImplementationClasses;
 
 import BaseClasses.Feature;
 import BaseClasses.SpotOnLoginPage;
+import data.ApplicationData;
 import data.SystemProperties;
 import pageobjects.pages.ISpotOnSignInPage;
 
 public class SpotOnCreativesPageCreatMgrImpl extends SpotOnLoginPage implements Feature {
+
+    ApplicationData ad = new ApplicationData();
     private ISpotOnSignInPage homePage;
     @Override
     public void init() {
@@ -17,14 +20,14 @@ public class SpotOnCreativesPageCreatMgrImpl extends SpotOnLoginPage implements 
     public void execute() {
         try {
 
-            homePage.enterEmail(SystemProperties.CREATIVE_MANAGER_USERNAME)
-                    .enterPassword(SystemProperties.PASSWORD)
+            homePage.enterEmail(ad.CREATIVE_MANAGER_USERNAME())
+                    .enterPassword(ad.PASSWORD())
                     .clickOnLoginButton().clickOnCreativesBtn()
                     .verifyCreativesPage()
                     .clickNewCreativeBtn()
-                    .enterCampaignAM(SystemProperties.CAMPAIGN_AM)
-                    .enterNameCM(SystemProperties.CREATIVE_NAME_CM)
-                    .enterClickTagURL(SystemProperties.WEB_URL)
+                    .enterCampaignAM(ad.CAMPAIGN_AM())
+                    .enterNameCM(ad.CREATIVE_NAME_CM())
+                    .enterClickTagURL(ad.WEB_URL())
                     .selectFormat()
                     .selectSize()
                     .selectFile()

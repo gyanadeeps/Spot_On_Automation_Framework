@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class CreateCampaignAccMgrValidation extends BaseTest {
     @Test(description = "Verify Campaign Creation Using Account Manager")
-    public void verifyCampaignCreation()
+    public void verifyCampaignCreationAccMgr()
     {
 
         add(new SpotOnCampaignCreationAccMgrImpl()).trigger();

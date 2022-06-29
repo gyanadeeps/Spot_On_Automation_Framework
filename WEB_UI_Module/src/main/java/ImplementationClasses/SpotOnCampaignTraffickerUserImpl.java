@@ -2,11 +2,13 @@ package ImplementationClasses;
 
 import BaseClasses.Feature;
 import BaseClasses.SpotOnLoginPage;
+import data.ApplicationData;
 import data.SystemProperties;
 import pageobjects.pages.ISpotOnSignInPage;
 
 public class SpotOnCampaignTraffickerUserImpl extends SpotOnLoginPage implements Feature
 {
+    ApplicationData ad = new ApplicationData();
     private ISpotOnSignInPage homePage;
     @Override
     public void init()
@@ -18,8 +20,8 @@ public class SpotOnCampaignTraffickerUserImpl extends SpotOnLoginPage implements
     public void execute() {
         try {
 
-            homePage.enterEmail(SystemProperties.TRAFFICKER_USERNAME)
-                    .enterPassword(SystemProperties.PASSWORD)
+            homePage.enterEmail(ad.TRAFFICKER_USERNAME())
+                    .enterPassword(ad.PASSWORD())
                     .clickOnLoginButton()
                     .clickOnCampaignBtn()
                     .verifyCampaignLabel()
