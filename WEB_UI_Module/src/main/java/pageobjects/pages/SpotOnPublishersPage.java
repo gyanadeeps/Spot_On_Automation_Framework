@@ -24,7 +24,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
     SelenideElement description = $x("//app-so-textarea[@label='Description']//textarea[contains(@class,'sc-ion-textarea-md')]");
     ElementsCollection checkboxList = $$x("//ion-checkbox[@role='checkbox']");
 
-    int index = ((int)(Math.round(Math.random()*4))+1);
+    int index = ((int) (Math.round(Math.random() * 4)) + 1);
 
 
     SelenideElement city = $x("//app-so-input[@label='City']//input[contains(@class,'native-input')]");
@@ -45,7 +45,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
     public ISpotOnPublishersPage verifyPublisherPage() {
 
         String label = publishersLabel.getText();
-        Assert.assertEquals(label,"Publishers");
+        Assert.assertEquals(label, "Publishers");
         return SpotOnPageFactory.getPublishersPage();
     }
 
@@ -60,8 +60,8 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
     @Override
     public ISpotOnPublishersPage enterPublisherName(String publisher) {
 
-        System.out.println("Publisher:" +publisher);
-        p.setProperty("publisher",publisher);
+        System.out.println("Publisher:" + publisher);
+        p.setProperty("publisher", publisher);
         rwd.writePublisher(p);
         publisherName.sendKeys(publisher);
         return SpotOnPageFactory.getPublishersPage();
@@ -88,7 +88,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
         for (WebElement webElement : checkboxList) {
             //String name = webElement.getAttribute("innerHTML");
 
-            if(k == index){
+            if (k == index) {
                 webElement.click();
                 break;
             }
@@ -114,9 +114,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
             Thread.sleep(5000);
             Selenide.executeJavaScript("arguments[0].click();", stateValue);
             Thread.sleep(5000);
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -189,15 +187,9 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
         try {
 
             Thread.sleep(3000);
+            saveBtn.click();
 
-            if(saveBtn.isEnabled()) {
-                saveBtn.click();
-                Thread.sleep(5000);
-            }
-            else{System.out.println("Disabled");}
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
