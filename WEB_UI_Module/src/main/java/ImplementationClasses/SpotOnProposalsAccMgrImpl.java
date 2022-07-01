@@ -30,11 +30,6 @@ public class SpotOnProposalsAccMgrImpl extends SpotOnLoginPage implements Featur
                     .enterStartDate(ad.START_DATE())
                     .enterEndDate(ad.END_DATE())
                     .enterClickTagURL(ad.WEB_URL())
-                    .clickSelectPublisherBtn()
-                    .clickAddMoreLocalPublisherBtn()
-                    .selLocalPublishers()
-                    .clickUseChosenBtn()
-                    .clickSaveChangesBtn()
                     .clickSaveBtn();
         } catch (Exception exception) {
             exception.printStackTrace();
