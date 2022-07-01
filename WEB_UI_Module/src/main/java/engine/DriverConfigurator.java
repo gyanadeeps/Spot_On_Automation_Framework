@@ -13,7 +13,7 @@ public final class DriverConfigurator {
 
 
     public static void configure(String driverType) {
-        Configuration.timeout = Duration.ofSeconds(10).toMillis();
+        Configuration.timeout = Duration.ofSeconds(30).toMillis();
         Configuration.startMaximized = true;
         Configuration.reopenBrowserOnFail = true;
         Configuration.savePageSource = false;
