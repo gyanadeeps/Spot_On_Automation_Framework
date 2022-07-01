@@ -21,10 +21,11 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
     SelenideElement newPublisherBtn = $x("//button[text()=' + New Publisher ']");
     SelenideElement publisherName = $x("//app-so-input[@label='Publisher Name']//input[contains(@class,'native-input')]");
     SelenideElement websiteURL = $x("//app-so-input[@label='Website URL']//input[contains(@class,'native-input')]");
+    SelenideElement publisherType = $x("(//ion-radio[@role='radio'])[1]");
     SelenideElement description = $x("//app-so-textarea[@label='Description']//textarea[contains(@class,'sc-ion-textarea-md')]");
-    ElementsCollection checkboxList = $$x("//ion-checkbox[@role='checkbox']");
+    //ElementsCollection radioBtnList = $$x("//ion-radio[@role='radio']");
 
-    int index = ((int) (Math.round(Math.random() * 4)) + 1);
+    //int index = ((int) (Math.round(Math.random() * 4)) + 1);
 
 
     SelenideElement city = $x("//app-so-input[@label='City']//input[contains(@class,'native-input')]");
@@ -84,8 +85,9 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
     @Override
     public ISpotOnPublishersPage selectPublisherType() {
 
-        int k = 0;
-        for (WebElement webElement : checkboxList) {
+        publisherType.click();
+        /*int k = 0;
+        for (WebElement webElement : radioBtnList) {
             //String name = webElement.getAttribute("innerHTML");
 
             if (k == index) {
@@ -93,7 +95,8 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
                 break;
             }
             k++;
-        }
+        }*/
+
 
         return SpotOnPageFactory.getPublishersPage();
     }
