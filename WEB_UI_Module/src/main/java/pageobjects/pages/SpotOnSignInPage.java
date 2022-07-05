@@ -155,9 +155,9 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
         return SpotOnPageFactory.verifyCreativeRejection();
     }
 
-    @Override
+   /* @Override
     public ISpotOnActivityLogs clickOnPublisherButton() {
         publishers.click();
         return SpotOnPageFactory.verifyActivityLogs();
-    }
+    }*/
 }
