@@ -22,7 +22,8 @@ public class SpotOnCreativesImpl extends SpotOnLoginPage implements Feature {
 
             homePage.enterEmail(ad.USERNAME())
                     .enterPassword(ad.PASSWORD())
-                    .clickOnLoginButton().clickOnCreativesBtn()
+                    .clickOnLoginButton()
+                    .clickOnCreativesBtn()
                     .verifyCreativesPage()
                     .clickNewCreativeBtn()
                     .enterCampaign(ad.CAMPAIGN())

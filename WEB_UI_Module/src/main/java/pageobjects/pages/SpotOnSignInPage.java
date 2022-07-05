@@ -139,4 +139,25 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
         campaigns.click();
         return SpotOnPageFactory.getCampaignsPageTraffickerUser();
     }
+
+    @Override
+    public ISpotOnCreativeRejection clickOnCreativePublisherBtn() {
+
+        creativesPublisher.click();
+        return SpotOnPageFactory.verifyCreativeRejection();
+    }
+
+
+    @Override
+    public ISpotOnCreativeRejection clickOnCreativeBtn() {
+
+        creatives.click();
+        return SpotOnPageFactory.verifyCreativeRejection();
+    }
+
+    @Override
+    public ISpotOnActivityLogs clickOnPublisherButton() {
+        publishers.click();
+        return SpotOnPageFactory.verifyActivityLogs();
+    }
 }
