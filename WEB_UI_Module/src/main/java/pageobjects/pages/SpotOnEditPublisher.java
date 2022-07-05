@@ -2,10 +2,13 @@ package pageobjects.pages;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.WebDriverRunner;
 import data.ApplicationData;
 import data.SystemProperties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import pageobjects.PageFactoryClasses.SpotOnPageFactory;
 import utilities.ReadWriteData;
@@ -123,6 +126,8 @@ public class SpotOnEditPublisher implements ISpotOnEditPublisher {
     @Override
     public ISpotOnEditPublisher clickUpdateBtn() {
 
+        WebDriverWait wait = new WebDriverWait(WebDriverRunner.getWebDriver(),20);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Update ']")));
         updateBtn.click();
         return SpotOnPageFactory.getEditPublishersPage();
     }
