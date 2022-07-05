@@ -9,35 +9,35 @@
 
     </listeners>
 
-    <test name="Login Page Ui Validation">
+    <test name="Spot On Login Page Ui Validation">
         <classes>
             <class name="test.HomePage.LoginPageUiValidation"/>
         </classes>
 
     </test>
 
-    <test name="Proposals Page Ui Validation">
+    <test name="Spot On Proposals Page Ui Validation">
         <classes>
             <class name="test.ProposalsPage.ProposalsPageValidation"/>
         </classes>
 
     </test>
 
-    <test name="Publishers Page Ui Validation">
+    <test name="Spot On Publishers Page Ui Validation">
         <classes>
             <class name="test.PublishersPage.PublishersPageValidation"/>
         </classes>
 
     </test>
 
-    <test name="Campaign Creation Validation">
+    <test name="Spot On Campaign Creation Validation">
         <classes>
             <class name="test.CampaignPage.CreateCampaignValidation"/>
         </classes>
 
     </test>
 
-    <test name="Proposals Page Creation with Account Manager Validation">
+    <test name="Spot On Proposals Page Creation with Account Manager Validation">
         <classes>
             <class name="test.ProposalsPage.ProposalsPageAccMgrValidation"/>
         </classes>
@@ -45,7 +45,7 @@
     </test>
 
 
-    <test name="Campaign Creation with Account Manager">
+    <test name="Spot On Campaign Creation with Account Manager">
         <classes>
             <class name="test.CampaignPage.CreateCampaignAccMgrValidation"/>
         </classes>
@@ -53,7 +53,7 @@
     </test>
 
 
-    <test name="Edit Publisher Page Validation">
+    <test name="Spot On Edit Publisher Page Validation">
         <classes>
             <class name="test.PublishersPage.EditPublisherValidation"/>
         </classes>
@@ -61,7 +61,7 @@
     </test>
 
 
-    <test name="Clients Page Validation">
+    <test name="Spot On Clients Page Validation">
         <classes>
             <class name="test.ClientsPage.ClientsPageUIValidation"/>
         </classes>
@@ -70,14 +70,14 @@
 
 
 
-    <test name="Creatives Page Validation">
+    <test name="Spot On Creatives Page Validation">
         <classes>
             <class name="test.CreativesPage.CreativesPageUIValidation"/>
         </classes>
 
     </test>
 
-    <test name="Creatives Page Creative Manager Validation">
+    <test name="Spot On Creatives Page Creative Manager Validation">
         <classes>
             <class name="test.CreativesPage.CreativesPageAccMgrValidation"/>
         </classes>
@@ -85,7 +85,7 @@
     </test>
 
 
-    <test name="Creatives Publisher Page Validation">
+    <test name="Spot On Creatives Publisher Page Validation">
         <classes>
             <class name="test.CreativesPublisherPage.CreativesPublisherValidation"/>
         </classes>
@@ -93,75 +93,25 @@
     </test>
 
 
-    <test name="Users Page Validation">
+    <test name="Spot On Users Page Validation">
         <classes>
             <class name="test.UsersPage.UsersPageValidation"/>
         </classes>
 
     </test>
 
-    <test name="Campaign Page Publisher User Validation">
+    <test name="Spot On Campaign Page Publisher User Validation">
         <classes>
             <class name="test.PublisherUser.CampaignPageValidation"/>
         </classes>
 
     </test>
 
-    <test name="Publisher User Validation">
+    <test name="Spot On Publisher User Validation">
         <classes>
             <class name="test.PublisherUser.PublisherUserValidation"/>
-
         </classes>
 
-    </test>
-
-
-    <test name="Trafficker User Validation">
-        <classes>
-            <class name="test.TraffickerUser.TraffickerUserValidation"/>
-
-        </classes>
-
-    </test>
-
-    <test name="Trafficker User Campaign Page Validation">
-        <classes>
-            <class name="test.TraffickerUser.CampaignPageUIValidation"/>
-
-        </classes>
-
-    </test>
-
-
-
-
-
-
-
-    <!-- Rejection Creative -->
-    <test name = "Creative Rejection Using Service User" parallel="none">
-        <classes>
-            <class name="test.ProposalsPage.ProposalsPageValidation"></class>
-            <class name="test.CampaignPage.CreateCampaignValidation"></class>
-            <class name="test.CreativesPage.CreativesPageUIValidation"></class>
-            <class name="test.CreativesPage.RejectCreativeServiceUser"></class>
-        </classes>
-    </test>
-    <test name = "Creative Rejection Using Publisher User" parallel="none">
-        <classes>
-            <class name="test.ProposalsPage.ProposalsPageValidation"></class>
-            <class name="test.CampaignPage.CreateCampaignValidation"></class>
-            <class name="test.CreativesPage.CreativesPageUIValidation"></class>
-            <class name="test.CreativesPage.RejectCreativePublisherUser"></class>
-        </classes>
-    </test>
-    <test name = "Creative Rejection Using Trafficker User" parallel="none">
-        <classes>
-            <class name="test.ProposalsPage.ProposalsPageValidation"></class>
-            <class name="test.CampaignPage.CreateCampaignValidation"></class>
-            <class name="test.CreativesPage.CreativesPageUIValidation"></class>
-            <class name="test.CreativesPage.RejectCreativeTraffickerUser"></class>
-        </classes>
     </test>
 
 
