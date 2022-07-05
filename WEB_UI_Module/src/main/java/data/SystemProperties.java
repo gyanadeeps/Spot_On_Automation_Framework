@@ -40,7 +40,7 @@ public interface SystemProperties {
 
     String AUTHENTICATION_REQUIRED = System.getProperty("Authentication_Required", "Yes");
     //String SPOT_ON_URL = System.getProperty("URL", "http://dev.spot-on.com/");
-    String SPOT_ON_STG_URL = System.getProperty("URL", "https://stage.spot-on.com/");
+    String SPOT_ON_URL = System.getProperty("URL", "https://stage.spot-on.com/");
 
     String AWS_BUILD = System.getProperty("AWS_BUILD", "sched");
 
