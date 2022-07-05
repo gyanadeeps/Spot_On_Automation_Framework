@@ -10,7 +10,7 @@ public interface ISpotOnCreateCampaign {
 
     ISpotOnCreateCampaign clickSearchAndSelectPublisher();
     ISpotOnCreateCampaign clickAddMoreNationalPublisher();
-    ISpotOnCreateCampaign selectNationalPublisher(String publisherValue);
+    ISpotOnCreateCampaign selectNationalPublisher();
     ISpotOnCreateCampaign clickUseChosenBtn();
     ISpotOnCreateCampaign clickSaveChangesBtn();
     ISpotOnCreateCampaign clickDownIcon();

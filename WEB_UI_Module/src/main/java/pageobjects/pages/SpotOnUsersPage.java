@@ -68,7 +68,7 @@ public class SpotOnUsersPage implements ISpotOnUsersPage {
     public ISpotOnUsersPage clickOnInviteBtn() {
 
         try {
-            Thread.sleep(5000);
+            Thread.sleep(3000);
             invite.click();
         } catch (InterruptedException e) {
             e.printStackTrace();

@@ -283,21 +283,6 @@ public class ApplicationData {
         return searchKeyCreatives;
     }
 
-    public String SEARCH_KEY_NATIONAL_PUBLISHER() {
-        String searchKeyNationalPublisher = "Gyan Test 1";
-        return searchKeyNationalPublisher;
-    }
-
-    public String REJECTION_REASON() {
-        String rejectionReason = "Test Reject";
-        return rejectionReason;
-    }
-
-    public String USER_EMAIL() {
-        String userEmail = "gyansahoo111@gmail.com";
-        return userEmail;
-    }
-
 
 }
 

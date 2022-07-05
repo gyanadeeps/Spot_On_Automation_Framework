@@ -30,7 +30,7 @@ public class SpotOnCampaignCreationAccMgrImpl extends SpotOnLoginPage implements
                     .enterDescription(ad.DESCRIPTION_NEW_VALUE())
                     .clickSearchAndSelectPublisher()
                     .clickAddMoreNationalPublisher()
-                    .selectNationalPublisher(ad.SEARCH_KEY_NATIONAL_PUBLISHER())
+                    .selectNationalPublisher()
                     .clickUseChosenBtn()
                     .clickSaveChangesBtn()
                     .clickDownIcon()
