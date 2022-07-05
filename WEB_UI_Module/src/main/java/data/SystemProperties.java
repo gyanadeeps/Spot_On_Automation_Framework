@@ -39,7 +39,9 @@ public interface SystemProperties {
     String REMOTE_URL = System.getProperty("remote.url", "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub");
 
     String AUTHENTICATION_REQUIRED = System.getProperty("Authentication_Required", "Yes");
-    String SPOT_ON_URL = System.getProperty("URL", "http://dev.spot-on.com/");
+    //String SPOT_ON_URL = System.getProperty("URL", "http://dev.spot-on.com/");
+    String SPOT_ON_STG_URL = System.getProperty("URL", "https://stage.spot-on.com/");
+
     String AWS_BUILD = System.getProperty("AWS_BUILD", "sched");
 
     boolean SCREENSHOT_ON_EVERY_STEP = Boolean.parseBoolean(getProperty("screenshot_on_every_step"));

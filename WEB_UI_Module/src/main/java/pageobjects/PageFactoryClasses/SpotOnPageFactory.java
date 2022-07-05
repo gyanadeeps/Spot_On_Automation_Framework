@@ -83,4 +83,16 @@ public class SpotOnPageFactory extends PageFactory
         return wrap(new SpotOnTraffickerUser(), ISpotOnTraffickerUser.class);
     }
 
+    public static ISpotOnCreativeRejection verifyCreativeRejection()
+    {
+
+        return wrap(new SpotOnCreativeRejection(), ISpotOnCreativeRejection.class);
+    }
+
+    public static ISpotOnActivityLogs verifyActivityLogs()
+    {
+
+        return wrap(new SpotOnActivityLogs(), ISpotOnActivityLogs.class);
+    }
+
 }
