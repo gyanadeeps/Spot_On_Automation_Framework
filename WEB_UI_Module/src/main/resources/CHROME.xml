@@ -30,13 +30,6 @@
 
     </test>
 
-    <test name="Edit Proposal with Account Manager User">
-        <classes>
-            <class name="test.ProposalsPage.EditProposalAccMgr"/>
-        </classes>
-
-    </test>
-
     <test name="Publishers Page Ui Validation">
         <classes>
             <class name="test.PublishersPage.PublishersPageValidation"/>
@@ -58,6 +51,12 @@
 
     </test>
 
+    <test name="Edit Proposal with Account Manager User">
+        <classes>
+            <class name="test.ProposalsPage.EditProposalAccMgr"/>
+        </classes>
+
+    </test>
 
     <test name="Campaign Creation with Account Manager">
         <classes>
