@@ -95,10 +95,10 @@ public class SpotOnPageFactory extends PageFactory
         return wrap(new SpotOnActivityLogs(), ISpotOnActivityLogs.class);
     }
 
-    public static ISpotOnEditProposalServiceUser verifyEditProposalServiceUser()
+    public static ISpotOnEditProposal verifyEditProposalServiceUser()
     {
 
-        return wrap(new SpotOnEditProposalServiceUser(), ISpotOnEditProposalServiceUser.class);
+        return wrap(new SpotOnEditProposal(), ISpotOnEditProposal.class);
     }
 
 }

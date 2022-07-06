@@ -24,8 +24,8 @@ public class SpotOnEditProposalAccMgrImpl extends SpotOnLoginPage implements Fea
                     .clickOnLoginButton()
                     .clickOnProposalBtnEditServiceUser()
                     .verifyProposalsPage()
-                    .enterSearchKeyword(ad.SEARCH_KEY_PROPOSALS())
-                    .clickProposal()
+                    .enterSearchKeywordAM(ad.SEARCH_KEY_PROPOSALS_AM())
+                    .clickProposalAM()
                     .enterDescription(ad.DESCRIPTION_PROPOSAL())
                     .clickUpdateBtn()
             ;

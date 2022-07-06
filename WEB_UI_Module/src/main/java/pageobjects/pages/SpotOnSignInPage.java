@@ -162,7 +162,7 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
     }
 
     @Override
-    public ISpotOnEditProposalServiceUser clickOnProposalBtnEditServiceUser() {
+    public ISpotOnEditProposal clickOnProposalBtnEditServiceUser() {
         proposals.click();
         return SpotOnPageFactory.verifyEditProposalServiceUser();
     }

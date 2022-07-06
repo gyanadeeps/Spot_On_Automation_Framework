@@ -11,19 +11,21 @@ import java.util.Properties;
 
 import static com.codeborne.selenide.Selenide.$x;
 
-public class SpotOnEditProposalServiceUser implements ISpotOnEditProposalServiceUser {
+public class SpotOnEditProposal implements ISpotOnEditProposal {
 
     Properties p = new Properties();
     ReadWriteData rwd = new ReadWriteData();
+    ApplicationData ad = new ApplicationData();
     SelenideElement proposalsLabel = $x("//label[text()='Proposals']");
     SelenideElement search = $x("//input[@placeholder='Search']");
     SelenideElement proposal = $x("//span[text()='"+ rwd.readData(p)+"']");
+    SelenideElement proposalAM = $x("//span[text()='"+ ad.CAMPAIGN_KEY_AM()+"']");
     SelenideElement description = $x("//textarea[contains(@class,'sc-ion-textarea-md')]");
     SelenideElement updateBtn = $x("//body/app-root[1]/ion-app[1]/ion-router-outlet[1]/app-home[1]/ion-split-pane[1]/ion-router-outlet[1]/app-proposal[1]/ion-content[1]/ion-router-outlet[1]/app-create-proposal[1]/ion-content[1]/form[1]/app-base-entity-action-buttons[1]/div[1]/div[1]/div[1]/div[1]/app-so-button[1]/div[1]");
     SelenideElement noBtn = $x("//button//span[text()='No']");
 
     @Override
-    public ISpotOnEditProposalServiceUser verifyProposalsPage(){
+    public ISpotOnEditProposal verifyProposalsPage(){
 
         String label = proposalsLabel.getText();
         Assert.assertEquals(label,"Proposals");
@@ -31,7 +33,7 @@ public class SpotOnEditProposalServiceUser implements ISpotOnEditProposalService
     }
 
     @Override
-    public ISpotOnEditProposalServiceUser enterSearchKeyword(String searchKey) {
+    public ISpotOnEditProposal enterSearchKeyword(String searchKey) {
 
         // String s = rwd.getStr();
         System.out.println("Campaign Key:"+searchKey);
@@ -41,14 +43,30 @@ public class SpotOnEditProposalServiceUser implements ISpotOnEditProposalService
     }
 
     @Override
-    public ISpotOnEditProposalServiceUser clickProposal() {
+    public ISpotOnEditProposal enterSearchKeywordAM(String searchKeyAM) {
+
+        System.out.println("Campaign Value "+searchKeyAM);
+        search.sendKeys(searchKeyAM);
+        search.sendKeys(Keys.ENTER);
+        return SpotOnPageFactory.verifyEditProposalServiceUser();
+    }
+
+    @Override
+    public ISpotOnEditProposal clickProposal() {
 
         proposal.click();
         return SpotOnPageFactory.verifyEditProposalServiceUser();
     }
-    
+
     @Override
-    public ISpotOnEditProposalServiceUser enterDescription(String descValue) {
+    public ISpotOnEditProposal clickProposalAM() {
+
+        proposalAM.click();
+        return SpotOnPageFactory.verifyEditProposalServiceUser();
+    }
+
+    @Override
+    public ISpotOnEditProposal enterDescription(String descValue) {
 
         description.clear();
         description.sendKeys(descValue);
@@ -56,7 +74,7 @@ public class SpotOnEditProposalServiceUser implements ISpotOnEditProposalService
     }
 
     @Override
-    public ISpotOnEditProposalServiceUser clickUpdateBtn() {
+    public ISpotOnEditProposal clickUpdateBtn() {
 
         try {
 

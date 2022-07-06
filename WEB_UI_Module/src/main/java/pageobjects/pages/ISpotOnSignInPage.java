@@ -22,6 +22,6 @@ public interface ISpotOnSignInPage
   ISpotOnCreativeRejection clickOnCreativePublisherBtn();
   ISpotOnCreativeRejection clickOnCreativeBtn();
   ISpotOnActivityLogs clickOnPublisherButton();
-  ISpotOnEditProposalServiceUser clickOnProposalBtnEditServiceUser();
+  ISpotOnEditProposal clickOnProposalBtnEditServiceUser();
 
 }
