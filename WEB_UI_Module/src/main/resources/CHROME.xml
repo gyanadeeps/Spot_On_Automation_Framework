@@ -23,6 +23,20 @@
 
     </test>
 
+    <test name="Edit Proposal with Service User">
+        <classes>
+            <class name="test.ProposalsPage.EditProposalServiceUser"/>
+        </classes>
+
+    </test>
+
+    <test name="Edit Proposal with Account Manager User">
+        <classes>
+            <class name="test.ProposalsPage.EditProposalAccMgr"/>
+        </classes>
+
+    </test>
+
     <test name="Publishers Page Ui Validation">
         <classes>
             <class name="test.PublishersPage.PublishersPageValidation"/>
@@ -132,7 +146,13 @@
 
     </test>
 
+    <test name="Activity Logs Page Validation">
+        <classes>
+            <class name="test.ActivityLogs.ActivityLogsValidation"/>
 
+        </classes>
+
+    </test>
 
 
 

@@ -21,6 +21,7 @@ public interface ISpotOnSignInPage
   ISpotOnCampaignTraffickerUser clickOnCampaignBtn();
   ISpotOnCreativeRejection clickOnCreativePublisherBtn();
   ISpotOnCreativeRejection clickOnCreativeBtn();
- // ISpotOnActivityLogs clickOnPublisherButton();
+  ISpotOnActivityLogs clickOnPublisherButton();
+  ISpotOnEditProposalServiceUser clickOnProposalBtnEditServiceUser();
 
 }

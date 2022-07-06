@@ -89,10 +89,16 @@ public class SpotOnPageFactory extends PageFactory
         return wrap(new SpotOnCreativeRejection(), ISpotOnCreativeRejection.class);
     }
 
-    /*public static ISpotOnActivityLogs verifyActivityLogs()
+    public static ISpotOnActivityLogs verifyActivityLogs()
     {
 
         return wrap(new SpotOnActivityLogs(), ISpotOnActivityLogs.class);
-    }*/
+    }
+
+    public static ISpotOnEditProposalServiceUser verifyEditProposalServiceUser()
+    {
+
+        return wrap(new SpotOnEditProposalServiceUser(), ISpotOnEditProposalServiceUser.class);
+    }
 
 }

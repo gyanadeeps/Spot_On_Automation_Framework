@@ -298,6 +298,10 @@ public class ApplicationData {
         return userEmail;
     }
 
+    public String DESCRIPTION_PROPOSAL() {
+        String descriptionProposal = "Test Edit Proposal";
+        return descriptionProposal;
+    }
 
 }
 
