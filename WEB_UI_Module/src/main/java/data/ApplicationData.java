@@ -303,6 +303,17 @@ public class ApplicationData {
         return descriptionProposal;
     }
 
+    public int UNIT_SIZE_INDEX() {
+        int unitSizeIndex = 1;
+        return unitSizeIndex;
+    }
+
+    public int PLACEMENT() {
+        int placement = 1;
+        return placement;
+    }
+
+
 }
 
 
