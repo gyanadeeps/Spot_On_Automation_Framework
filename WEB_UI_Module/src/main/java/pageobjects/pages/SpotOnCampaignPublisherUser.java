@@ -13,6 +13,7 @@ public class SpotOnCampaignPublisherUser implements ISpotOnCampaignPublisherUser
     SelenideElement campaignsValue = $x("(//ion-row[2]//ion-col[1])[2]");
     SelenideElement updateButton = $x("//button[text()='Update ']");
 
+    // Verify whether the respective page is Campaign Page
     @Override
     public ISpotOnCampaignPublisherUser verifyCampaignsLabel() {
 
@@ -21,6 +22,7 @@ public class SpotOnCampaignPublisherUser implements ISpotOnCampaignPublisherUser
         return SpotOnPageFactory.getCampaignsPage();
     }
 
+    // Select or open any Campaign
     @Override
     public ISpotOnCampaignPublisherUser selectCampaign() {
 
@@ -28,6 +30,7 @@ public class SpotOnCampaignPublisherUser implements ISpotOnCampaignPublisherUser
         return SpotOnPageFactory.getCampaignsPage();
     }
 
+    // Verify that Update Button is not present
     @Override
     public ISpotOnCampaignPublisherUser verifyUpdateButtonNotPresent() {
 

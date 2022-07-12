@@ -24,6 +24,7 @@ public class SpotOnEditProposal implements ISpotOnEditProposal {
     SelenideElement updateBtn = $x("//body/app-root[1]/ion-app[1]/ion-router-outlet[1]/app-home[1]/ion-split-pane[1]/ion-router-outlet[1]/app-proposal[1]/ion-content[1]/ion-router-outlet[1]/app-create-proposal[1]/ion-content[1]/form[1]/app-base-entity-action-buttons[1]/div[1]/div[1]/div[1]/div[1]/app-so-button[1]/div[1]");
     SelenideElement noBtn = $x("//button//span[text()='No']");
 
+    // Verify whether the respective page is Proposal Page
     @Override
     public ISpotOnEditProposal verifyProposalsPage(){
 
@@ -32,6 +33,7 @@ public class SpotOnEditProposal implements ISpotOnEditProposal {
         return SpotOnPageFactory.verifyEditProposalServiceUser();
     }
 
+    // Enter Proposal value in Search box for Service User
     @Override
     public ISpotOnEditProposal enterSearchKeyword(String searchKey) {
 
@@ -42,6 +44,7 @@ public class SpotOnEditProposal implements ISpotOnEditProposal {
         return SpotOnPageFactory.verifyEditProposalServiceUser();
     }
 
+    // Enter Proposal value in Search box for Account Manager User
     @Override
     public ISpotOnEditProposal enterSearchKeywordAM(String searchKeyAM) {
 
@@ -51,6 +54,7 @@ public class SpotOnEditProposal implements ISpotOnEditProposal {
         return SpotOnPageFactory.verifyEditProposalServiceUser();
     }
 
+    // Click on searched proposal (Service User)
     @Override
     public ISpotOnEditProposal clickProposal() {
 
@@ -58,6 +62,7 @@ public class SpotOnEditProposal implements ISpotOnEditProposal {
         return SpotOnPageFactory.verifyEditProposalServiceUser();
     }
 
+    // Click on searched proposal (Account Manager User)
     @Override
     public ISpotOnEditProposal clickProposalAM() {
 
@@ -65,6 +70,7 @@ public class SpotOnEditProposal implements ISpotOnEditProposal {
         return SpotOnPageFactory.verifyEditProposalServiceUser();
     }
 
+    // Enter Description
     @Override
     public ISpotOnEditProposal enterDescription(String descValue) {
 
@@ -73,6 +79,7 @@ public class SpotOnEditProposal implements ISpotOnEditProposal {
         return SpotOnPageFactory.verifyEditProposalServiceUser();
     }
 
+    // Click on Update Button
     @Override
     public ISpotOnEditProposal clickUpdateBtn() {
 
@@ -82,7 +89,7 @@ public class SpotOnEditProposal implements ISpotOnEditProposal {
             Thread.sleep(5000);
             noBtn.click();
             //Selenide.executeJavaScript("arguments[0].click;",noBtn);
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         }
         catch (Exception e)
         {

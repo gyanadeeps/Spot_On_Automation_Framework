@@ -22,7 +22,7 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
     SelenideElement campaigns = $x("//ion-label[text()=' Campaigns ']");
     SelenideElement creativesPublisher = $x("//ion-label[text()=' Creatives (Publisher) ']");
 
-
+    // Enter Username
     @Override
     public ISpotOnSignInPage enterEmail(String name)
     {
@@ -30,6 +30,7 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
         return SpotOnPageFactory.getHomepage();
     }
 
+    // Enter Password
     @Override
     public ISpotOnSignInPage enterPassword(String name)
     {
@@ -37,6 +38,7 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
         return SpotOnPageFactory.getHomepage();
     }
 
+    // Click on Login button
     @Override
     public ISpotOnSignInPage clickOnLoginButton()
     {
@@ -44,31 +46,28 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
         return SpotOnPageFactory.getHomepage();
     }
 
-    @Override
-    public ISpotOnSignUp clickOnButton()
-    {
-        System.out.println("Testing");
-        return SpotOnPageFactory.getSignUpPage();
-    }
-
+    // Click on Proposals Button
     @Override
     public ISpotOnProposalsPage clickOnProposalsButton() {
         proposals.click();
         return SpotOnPageFactory.getProposalsPage();
     }
 
+    // Click on Publishers Button
     @Override
     public ISpotOnPublishersPage clickOnPublishersButton() {
         publishers.click();
         return SpotOnPageFactory.getPublishersPage();
     }
 
+    // Click on Proposals Button
     @Override
     public ISpotOnCreateCampaign clickOnProposalsBtn() {
         proposals.click();
         return SpotOnPageFactory.getCampaign();
     }
 
+    // Click on Creatives Button
     @Override
     public ISpotOnCreativesPage clickOnCreativesBtn() {
 
@@ -76,6 +75,7 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
         return SpotOnPageFactory.getCreativesPage();
     }
 
+    // Click on Clients Button
     @Override
     public ISpotOnClientsPage clickOnClientsBtn() {
 
@@ -83,6 +83,7 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
         return SpotOnPageFactory.getClientsPage();
     }
 
+    // Click on Users Button
     @Override
     public ISpotOnUsersPage clickOnUsersBtn() {
 
@@ -90,6 +91,7 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
         return SpotOnPageFactory.getUsersPage();
     }
 
+    // Verify Profile Page is displayed on Login
     @Override
     public ISpotOnPublisherUser verifyPublisherProfile() {
 
@@ -104,6 +106,7 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
         return SpotOnPageFactory.verifyPublisherUser();
     }
 
+    // Click on Campaigns Button
     @Override
     public ISpotOnCampaignPublisherUser clickOnCampaignsBtn() {
 
@@ -111,6 +114,7 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
         return SpotOnPageFactory.getCampaignsPage();
     }
 
+    // Click on Publishers Button
     @Override
     public ISpotOnEditPublisher clickOnPublishersBtn() {
 
@@ -118,6 +122,7 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
         return SpotOnPageFactory.getEditPublishersPage();
     }
 
+    // Click on Creatives(Publisher) Button
     @Override
     public ISpotOnCreativesPublisherPage clickOnCreativesPublisherBtn() {
 
@@ -125,6 +130,7 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
         return SpotOnPageFactory.getCreativesPublishersPage();
     }
 
+    // Verify Profile page is displayed onLogin for Trafficker User
     @Override
     public ISpotOnTraffickerUser verifyTraffickerProfile() {
 
@@ -133,6 +139,7 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
         return SpotOnPageFactory.verifyTraffickerUser();
     }
 
+    // Click on Campaigns Button
     @Override
     public ISpotOnCampaignTraffickerUser clickOnCampaignBtn() {
 
@@ -140,6 +147,7 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
         return SpotOnPageFactory.getCampaignsPageTraffickerUser();
     }
 
+    // Click on Creatives(Publisher) Button
     @Override
     public ISpotOnCreativeRejection clickOnCreativePublisherBtn() {
 
@@ -147,7 +155,7 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
         return SpotOnPageFactory.verifyCreativeRejection();
     }
 
-
+    // Click on Creatives Button
     @Override
     public ISpotOnCreativeRejection clickOnCreativeBtn() {
 
@@ -155,12 +163,14 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
         return SpotOnPageFactory.verifyCreativeRejection();
     }
 
+    // Click on Publishers Button
     @Override
     public ISpotOnActivityLogs clickOnPublisherButton() {
         publishers.click();
         return SpotOnPageFactory.verifyActivityLogs();
     }
 
+    // Click on Proposals Button
     @Override
     public ISpotOnEditProposal clickOnProposalBtnEditServiceUser() {
         proposals.click();

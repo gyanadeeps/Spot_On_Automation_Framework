@@ -46,6 +46,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
     SelenideElement yesBtn = $x("//button//span[text()='Yes']");
     SelenideElement closeBtn = $x("//button//span[text()='Close']");
 
+    // Verify whether the respective page is Proposals page
     @Override
     public ISpotOnCreateCampaign verifyProposalsPage(){
 
@@ -54,6 +55,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
         return SpotOnPageFactory.getCampaign();
     }
 
+    // Enter Proposal value in Search box for Service User
     @Override
     public ISpotOnCreateCampaign enterSearchKeyword(String searchKey) {
 
@@ -64,6 +66,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
         return SpotOnPageFactory.getCampaign();
     }
 
+    // Enter Proposal value in Search box for Account Manager User
     @Override
     public ISpotOnCreateCampaign enterSearchKeywordAM(String searchKeyAM) {
 
@@ -73,6 +76,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
         return SpotOnPageFactory.getCampaign();
     }
 
+    // Click on searched proposal for Service User
     @Override
     public ISpotOnCreateCampaign clickProposal() {
 
@@ -80,6 +84,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
         return SpotOnPageFactory.getCampaign();
     }
 
+    // Click on searched proposal for Account Manager User
     @Override
     public ISpotOnCreateCampaign clickProposalAM() {
 
@@ -87,6 +92,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
         return SpotOnPageFactory.getCampaign();
     }
 
+    // Enter Description
     @Override
     public ISpotOnCreateCampaign enterDescription(String descValue) {
 
@@ -94,6 +100,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
         return SpotOnPageFactory.getCampaign();
     }
 
+    // Click on Search and Select Publisher Button
     @Override
     public ISpotOnCreateCampaign clickSearchAndSelectPublisher() {
 
@@ -101,6 +108,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
         return SpotOnPageFactory.getCampaign();
     }
 
+    // Click on Add More National Publisher Button
     @Override
     public ISpotOnCreateCampaign clickAddMoreNationalPublisher() {
 
@@ -108,6 +116,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
         return SpotOnPageFactory.getCampaign();
     }
 
+    // Select National Publisher
     @Override
     public ISpotOnCreateCampaign selectNationalPublisher(String publisherValue) {
 
@@ -124,6 +133,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
         return SpotOnPageFactory.getCampaign();
     }
 
+    // Click on USe Chosen Button
     @Override
     public ISpotOnCreateCampaign clickUseChosenBtn() {
 
@@ -131,6 +141,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
         return SpotOnPageFactory.getCampaign();
     }
 
+    // Click on Save Changes Button
     @Override
     public ISpotOnCreateCampaign clickSaveChangesBtn() {
         try {
@@ -139,7 +150,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
             Thread.sleep(5000);
             saveChangesBtn.scrollIntoView(true).click();
 
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         }
         catch (Exception e)
         {
@@ -149,6 +160,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
         return SpotOnPageFactory.getCampaign();
     }
 
+    // Click on Down arrow icon
     @Override
     public ISpotOnCreateCampaign clickDownIcon() {
 
@@ -156,6 +168,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
         return SpotOnPageFactory.getCampaign();
     }
 
+    // Enter Desired Impression
     @Override
     public ISpotOnCreateCampaign enterDesiredImpressions(String desiredValue) {
 
@@ -165,6 +178,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
         return SpotOnPageFactory.getCampaign();
     }
 
+    // Enter Allocated Budget
     @Override
     public ISpotOnCreateCampaign enterAllocatedBudget(String budgetValue) {
 
@@ -172,6 +186,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
         return SpotOnPageFactory.getCampaign();
     }
 
+    // Select Buy Button
     @Override
     public ISpotOnCreateCampaign selectBuyBtn() {
 
@@ -183,6 +198,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
         return SpotOnPageFactory.getCampaign();
     }
 
+    // Click Update Button
     @Override
     public ISpotOnCreateCampaign clickUpdateBtn() {
 
@@ -192,7 +208,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
             Thread.sleep(5000);
             noBtn.click();
             //Selenide.executeJavaScript("arguments[0].click;",noBtn);
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         }
         catch (Exception e)
         {
@@ -202,6 +218,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
         return SpotOnPageFactory.getCampaign();
     }
 
+    // Click Create New Campaign Button
     @Override
     public ISpotOnCreateCampaign clickCreateNewCampaignBtn() {
 
@@ -211,7 +228,7 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
             yesBtn.click();
             Thread.sleep(5000);
             closeBtn.click();
-            Thread.sleep(5000);
+            Thread.sleep(2000);
 
         }
         catch (Exception e)
@@ -221,6 +238,5 @@ public class SpotOnCreateCampaign implements ISpotOnCreateCampaign{
 
         return SpotOnPageFactory.getCampaign();
     }
-
 
 }

@@ -41,6 +41,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage {
     SelenideElement sendCreativesForReviewBtn = $x("//button[text()=' Send Creatives to Review']");
     SelenideElement selectFile = $x("//input[@type='file']");
 
+    // Verify whether the respective page is Creatives page
     @Override
     public ISpotOnCreativesPage verifyCreativesPage() {
 
@@ -49,6 +50,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage {
         return SpotOnPageFactory.getCreativesPage();
     }
 
+    // Click on New Creative Button
     @Override
     public ISpotOnCreativesPage clickNewCreativeBtn() {
 
@@ -56,6 +58,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage {
         return SpotOnPageFactory.getCreativesPage();
     }
 
+    // Enter Campaign value for Service user
     @Override
     public ISpotOnCreativesPage enterCampaign(String campValue) {
 
@@ -65,6 +68,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage {
         return SpotOnPageFactory.getCreativesPage();
     }
 
+    // Enter Campaign value for Account Manager user
     @Override
     public ISpotOnCreativesPage enterCampaignAM(String campValueAM) {
 
@@ -74,6 +78,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage {
         return SpotOnPageFactory.getCreativesPage();
     }
 
+    // Enter Creative Name for Service User
     @Override
     public ISpotOnCreativesPage enterName(String nameValue) {
 
@@ -82,6 +87,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage {
         return SpotOnPageFactory.getCreativesPage();
     }
 
+    // Enter Creative Name for Creative Manager User
     @Override
     public ISpotOnCreativesPage enterNameCM(String nameValueCM) {
 
@@ -89,6 +95,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage {
         return SpotOnPageFactory.getCreativesPage();
     }
 
+    // Enter value for Click Tag URL field
     @Override
     public ISpotOnCreativesPage enterClickTagURL(String tagURL) {
 
@@ -96,6 +103,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage {
         return SpotOnPageFactory.getCreativesPage();
     }
 
+    // Select Format
     @Override
     public ISpotOnCreativesPage selectFormat() {
 
@@ -104,6 +112,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage {
         return SpotOnPageFactory.getCreativesPage();
     }
 
+    // Select Size
     @Override
     public ISpotOnCreativesPage selectSize() {
 
@@ -112,24 +121,11 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage {
         return SpotOnPageFactory.getCreativesPage();
     }
 
+    // Select File to Upload
     @Override
     public ISpotOnCreativesPage selectFile() {
 
         try {
-            /*Selenide.executeJavaScript("arguments[0].click();",selectFileBtn);
-            Thread.sleep(3000);
-            StringSelection ss = new StringSelection("C:\\Users\\team9\\Desktop\\test1.jpg");
-            Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-
-            // Ctrl + v
-            Robot robot = new Robot();
-            robot.keyPress(KeyEvent.VK_CONTROL);
-            robot.keyPress(KeyEvent.VK_V);
-            robot.keyRelease(KeyEvent.VK_V);
-            robot.keyRelease(KeyEvent.VK_CONTROL);
-            Thread.sleep(3000);
-            robot.keyPress(KeyEvent.VK_ENTER);
-            robot.keyRelease(KeyEvent.VK_ENTER);*/
 
             Thread.sleep(5000);
             String s = System.getProperty("user.dir") + "/test1.jpg";
@@ -145,6 +141,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage {
         return SpotOnPageFactory.getCreativesPage();
     }
 
+    // Click on Add to queue Button
     @Override
     public ISpotOnCreativesPage clickAddToQueueBtn() {
 
@@ -159,6 +156,7 @@ public class SpotOnCreativesPage implements ISpotOnCreativesPage {
         return SpotOnPageFactory.getCreativesPage();
     }
 
+    // Click on Send Creatives for Review Button
     @Override
     public ISpotOnCreativesPage clickSendCreativesForReviewBtn() {
 

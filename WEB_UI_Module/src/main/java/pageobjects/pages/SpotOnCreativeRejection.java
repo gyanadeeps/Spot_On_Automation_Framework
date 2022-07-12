@@ -16,6 +16,7 @@ public class SpotOnCreativeRejection implements ISpotOnCreativeRejection {
     SelenideElement rejectReason = $x("//input[@placeholder='This creative does not ...']");
     SelenideElement saveBtn = $x("//button//span[text()='Save']");
 
+    // Verify whether the respective page is Creatives Queue page
     @Override
     public ISpotOnCreativeRejection verifyCreativesPublisherPage() {
 
@@ -25,6 +26,7 @@ public class SpotOnCreativeRejection implements ISpotOnCreativeRejection {
 
     }
 
+    // Enter Creative value in Search box
     @Override
     public ISpotOnCreativeRejection enterSearchKeyword(String searchKey) {
 
@@ -34,6 +36,7 @@ public class SpotOnCreativeRejection implements ISpotOnCreativeRejection {
         return SpotOnPageFactory.verifyCreativeRejection();
     }
 
+    // Click on Reject Button
     @Override
     public ISpotOnCreativeRejection clickRejectBtn() {
 
@@ -46,6 +49,7 @@ public class SpotOnCreativeRejection implements ISpotOnCreativeRejection {
         return SpotOnPageFactory.verifyCreativeRejection();
     }
 
+    // Enter Rejection Reason and Click on Save Button
     @Override
     public ISpotOnCreativeRejection enterRejectionReason(String reason) {
 
@@ -54,9 +58,5 @@ public class SpotOnCreativeRejection implements ISpotOnCreativeRejection {
         return SpotOnPageFactory.verifyCreativeRejection();
     }
 
-    @Override
-    public ISpotOnCreativeRejection clickSaveBtn() {
-        return null;
-    }
 }
 

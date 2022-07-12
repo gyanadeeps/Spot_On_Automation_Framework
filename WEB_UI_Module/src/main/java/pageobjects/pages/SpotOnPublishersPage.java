@@ -42,6 +42,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
     SelenideElement saveBtn = $x("(//button[text()='Save'])[2]");
     SelenideElement stateValue = $x("(//ion-radio[@class='sc-ion-select-popover md in-item interactive hydrated'])[1]");
 
+    // Check whether the respective page is Publisher Page
     @Override
     public ISpotOnPublishersPage verifyPublisherPage() {
 
@@ -50,6 +51,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
         return SpotOnPageFactory.getPublishersPage();
     }
 
+    // Click on New Publisher Button
     @Override
     public ISpotOnPublishersPage clickNewPublisherButton() {
 
@@ -58,6 +60,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
         return SpotOnPageFactory.getPublishersPage();
     }
 
+    // Enter Publisher Name
     @Override
     public ISpotOnPublishersPage enterPublisherName(String publisher) {
 
@@ -68,6 +71,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
         return SpotOnPageFactory.getPublishersPage();
     }
 
+    // Enter Website URL
     @Override
     public ISpotOnPublishersPage enterWebsiteURL(String webURL) {
 
@@ -75,6 +79,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
         return SpotOnPageFactory.getPublishersPage();
     }
 
+    // Enter Description
     @Override
     public ISpotOnPublishersPage enterDescription(String desc) {
 
@@ -82,6 +87,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
         return SpotOnPageFactory.getPublishersPage();
     }
 
+    // Select Publisher Type
     @Override
     public ISpotOnPublishersPage selectPublisherType() {
 
@@ -101,6 +107,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
         return SpotOnPageFactory.getPublishersPage();
     }
 
+    // Enter City
     @Override
     public ISpotOnPublishersPage enterCity(String cityName) {
 
@@ -108,6 +115,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
         return SpotOnPageFactory.getPublishersPage();
     }
 
+    // Select State
     @Override
     public ISpotOnPublishersPage selectState() {
 
@@ -124,6 +132,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
         return SpotOnPageFactory.getPublishersPage();
     }
 
+    // Enter Monthly Visitors
     @Override
     public ISpotOnPublishersPage enterMonthlyVisitors(String visitorsNumber) {
         //Selenide.executeJavaScript("arguments[0].sendKeys(visitorsNumber);",monthlyVisitors);
@@ -133,6 +142,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
         return SpotOnPageFactory.getPublishersPage();
     }
 
+    // Click Add New Button to add Inventory
     @Override
     public ISpotOnPublishersPage clickAddNewBtn() {
 
@@ -140,6 +150,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
         return SpotOnPageFactory.getPublishersPage();
     }
 
+    // Enter Ad Unit Name for Inventory
     @Override
     public ISpotOnPublishersPage enterUnitName(String name) {
 
@@ -147,6 +158,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
         return SpotOnPageFactory.getPublishersPage();
     }
 
+    // Select Size for Inventory
     @Override
     public ISpotOnPublishersPage selectSize(int index) {
         //System.out.println(index);
@@ -154,6 +166,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
         return SpotOnPageFactory.getPublishersPage();
     }
 
+    // Select Placement for Inventory
     @Override
     public ISpotOnPublishersPage selectPlacement(int indexP) {
 
@@ -161,6 +174,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
         return SpotOnPageFactory.getPublishersPage();
     }
 
+    // Select Unit Price for Inventory
     @Override
     public ISpotOnPublishersPage selectUnitPrice() {
 
@@ -169,6 +183,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
         return SpotOnPageFactory.getPublishersPage();
     }
 
+    // Enter Cost
     @Override
     public ISpotOnPublishersPage enterCost(String costValue) {
 
@@ -176,6 +191,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
         return SpotOnPageFactory.getPublishersPage();
     }
 
+    // Enter Availability
     @Override
     public ISpotOnPublishersPage enterAvailability(String availValue) {
 
@@ -183,6 +199,7 @@ public class SpotOnPublishersPage implements ISpotOnPublishersPage {
         return SpotOnPageFactory.getPublishersPage();
     }
 
+    // Click on Save Button
     @Override
     public ISpotOnPublishersPage clickSaveButton() {
 

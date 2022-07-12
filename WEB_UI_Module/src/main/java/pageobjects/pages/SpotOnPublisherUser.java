@@ -13,7 +13,7 @@ public class SpotOnPublisherUser implements ISpotOnPublisherUser{
     SelenideElement payments = $x("//ion-label[text()=' Payments ']");
     SelenideElement clients = $x("//ion-label[text()=' Clients ']");
 
-
+    // Verify whether Proposals link is displayed for Service User
     @Override
     public ISpotOnPublisherUser verifyProposalsLink() {
 
@@ -23,6 +23,7 @@ public class SpotOnPublisherUser implements ISpotOnPublisherUser{
         return SpotOnPageFactory.verifyPublisherUser();
     }
 
+    // Verify whether Payments link is displayed for Service User
     @Override
     public ISpotOnPublisherUser verifyPaymentsLink() {
 
@@ -31,6 +32,7 @@ public class SpotOnPublisherUser implements ISpotOnPublisherUser{
         return SpotOnPageFactory.verifyPublisherUser();
     }
 
+    // Verify whether Clients link is displayed for Service User
     @Override
     public ISpotOnPublisherUser verifyClientsLink() {
 

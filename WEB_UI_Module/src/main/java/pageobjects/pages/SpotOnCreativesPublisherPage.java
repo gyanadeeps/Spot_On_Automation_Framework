@@ -16,7 +16,7 @@ public class SpotOnCreativesPublisherPage implements ISpotOnCreativesPublisherPa
     SelenideElement closeIcon = $x("//ion-icon[@aria-label='close']");
     SelenideElement approveBtn = $x("//tr[1]//button[text()='Approve']");
 
-
+    // Verify whether the respective page is Creatives Queue page
     @Override
     public ISpotOnCreativesPublisherPage verifyCreativesPublisherPage() {
 
@@ -26,6 +26,7 @@ public class SpotOnCreativesPublisherPage implements ISpotOnCreativesPublisherPa
 
     }
 
+    // Enter Creative value in Search box
     @Override
     public ISpotOnCreativesPublisherPage enterSearchKeyword(String searchKey) {
 
@@ -35,6 +36,7 @@ public class SpotOnCreativesPublisherPage implements ISpotOnCreativesPublisherPa
         return SpotOnPageFactory.getCreativesPublishersPage();
     }
 
+    // Click on Preview Button
     @Override
     public ISpotOnCreativesPublisherPage clickPreviewBtn() {
 
@@ -49,6 +51,7 @@ public class SpotOnCreativesPublisherPage implements ISpotOnCreativesPublisherPa
         return SpotOnPageFactory.getCreativesPublishersPage();
     }
 
+    // Click on Approve Button
     @Override
     public ISpotOnCreativesPublisherPage clickApproveBtn() {
 

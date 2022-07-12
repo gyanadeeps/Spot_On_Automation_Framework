@@ -32,6 +32,7 @@ public class SpotOnProposalsPage implements ISpotOnProposalsPage {
     SelenideElement saveChangesBtn = $x("//button[text()=' Save Changes']");
     SelenideElement saveBtn = $x("(//button[text()='Save'])[2]");
 
+    // Verify whether the respective page is Proposals page
     @Override
     public ISpotOnProposalsPage verifyProposalsPage() {
 
@@ -40,12 +41,14 @@ public class SpotOnProposalsPage implements ISpotOnProposalsPage {
         return SpotOnPageFactory.getProposalsPage();
     }
 
+    // Click on New Proposals Button
     @Override
     public ISpotOnProposalsPage clickOnNewProposalBtn() {
         newProposalBtn.click();
         return SpotOnPageFactory.getProposalsPage();
     }
 
+    // Enter Proposal Name for Service User
     @Override
     public ISpotOnProposalsPage enterProposalName(String propName) {
 
@@ -62,6 +65,7 @@ public class SpotOnProposalsPage implements ISpotOnProposalsPage {
         return SpotOnPageFactory.getProposalsPage();
     }
 
+    // Enter Proposal Name for Account Manager
     @Override
     public ISpotOnProposalsPage enterProposalNameAM(String propNameAM) {
 
@@ -74,36 +78,42 @@ public class SpotOnProposalsPage implements ISpotOnProposalsPage {
         return SpotOnPageFactory.getProposalsPage();
     }
 
+    // Enter Description
     @Override
     public ISpotOnProposalsPage enterDescription(String desc) {
         description.sendKeys(desc);
         return SpotOnPageFactory.getProposalsPage();
     }
 
+    // Select Campaign Type
     @Override
     public ISpotOnProposalsPage selCampaignType() {
         campaignType.click();
         return SpotOnPageFactory.getProposalsPage();
     }
 
+    // Enter Start Date
     @Override
     public ISpotOnProposalsPage enterStartDate(String sDate) {
         startDate.sendKeys(sDate);
         return SpotOnPageFactory.getProposalsPage();
     }
 
+    // Enter End Date
     @Override
     public ISpotOnProposalsPage enterEndDate(String eDate) {
         endDate.sendKeys(eDate);
         return SpotOnPageFactory.getProposalsPage();
     }
 
+    // Enter value in Click Tag URL field
     @Override
     public ISpotOnProposalsPage enterClickTagURL(String URL) {
         clickTagURL.sendKeys(URL);
         return SpotOnPageFactory.getProposalsPage();
     }
 
+    // Click on Select Publisher button
     @Override
     public ISpotOnProposalsPage clickSelectPublisherBtn() {
 
@@ -112,24 +122,28 @@ public class SpotOnProposalsPage implements ISpotOnProposalsPage {
         return SpotOnPageFactory.getProposalsPage();
     }
 
+    // Click on Add More Local Publisher button
     @Override
     public ISpotOnProposalsPage clickAddMoreLocalPublisherBtn() {
         addMoreLocalPublisher.click();
         return SpotOnPageFactory.getProposalsPage();
     }
 
+    // Select Local Publisher
     @Override
     public ISpotOnProposalsPage selLocalPublishers() {
         localPublisher.click();
         return SpotOnPageFactory.getProposalsPage();
     }
 
+    // Click Use Chosen button
     @Override
     public ISpotOnProposalsPage clickUseChosenBtn() {
         useChosenBtn.click();
         return SpotOnPageFactory.getProposalsPage();
     }
 
+    // Click on Save Changes Button
     @Override
     public ISpotOnProposalsPage clickSaveChangesBtn() {
         //Selenide.executeJavaScript("arguments[0].click();",saveChangesBtn);
@@ -137,6 +151,7 @@ public class SpotOnProposalsPage implements ISpotOnProposalsPage {
         return SpotOnPageFactory.getProposalsPage();
     }
 
+    // Click on Save Button
     @Override
     public ISpotOnProposalsPage clickSaveBtn() {
         //WebDriverRunner.getWebDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

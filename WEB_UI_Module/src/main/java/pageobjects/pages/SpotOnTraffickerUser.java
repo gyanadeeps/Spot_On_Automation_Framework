@@ -10,7 +10,7 @@ public class SpotOnTraffickerUser implements ISpotOnTraffickerUser {
 
     SelenideElement proposals = $x("//ion-label[text()=' Proposals ']");
 
-
+    // Verify whether the respective page is Proposals page
     @Override
     public ISpotOnTraffickerUser verifyTraffickerLink() {
 

@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$x;
 public class SpotOnClientsPage implements ISpotOnClientsPage {
 
     SelenideElement clientsLabel = $x("//label[text()='Clients']");
-    SelenideElement newCreativeBtn = $x("//button[text()=' + New Client ']");
+    SelenideElement newClientBtn = $x("//button[text()=' + New Client ']");
     SelenideElement companyName = $x("//app-so-input[@label='Company Name']//input");
     SelenideElement description = $x("//app-so-textarea[@label='Description']//textarea");
     SelenideElement contactName = $x("//app-so-input[@label='Contact Name']//input");
@@ -22,13 +22,14 @@ public class SpotOnClientsPage implements ISpotOnClientsPage {
     SelenideElement saveBtn = $x("(//app-so-button//button[text()='Save'])[2]");
 
 
-
+    // Click on New Client Button
     @Override
     public ISpotOnClientsPage clickNewClientsBtn() {
-        newCreativeBtn.click();
+        newClientBtn.click();
         return SpotOnPageFactory.getClientsPage();
     }
 
+    // Verify whether the respective page is Clients page
     @Override
     public ISpotOnClientsPage verifyClientsPage() {
 
@@ -37,6 +38,7 @@ public class SpotOnClientsPage implements ISpotOnClientsPage {
         return SpotOnPageFactory.getClientsPage();
     }
 
+    // Enter Company Name
     @Override
     public ISpotOnClientsPage enterCompanyName(String companyValue) {
 
@@ -44,6 +46,7 @@ public class SpotOnClientsPage implements ISpotOnClientsPage {
         return SpotOnPageFactory.getClientsPage();
     }
 
+    // Enter Description
     @Override
     public ISpotOnClientsPage enterDescription(String descriptionValue) {
 
@@ -51,6 +54,7 @@ public class SpotOnClientsPage implements ISpotOnClientsPage {
         return SpotOnPageFactory.getClientsPage();
     }
 
+    // Enter Contact Name
     @Override
     public ISpotOnClientsPage enterContactName(String contName) {
 
@@ -58,6 +62,7 @@ public class SpotOnClientsPage implements ISpotOnClientsPage {
         return SpotOnPageFactory.getClientsPage();
     }
 
+    // Enter Contact Phone
     @Override
     public ISpotOnClientsPage enterContactPhone(String phone) {
 
@@ -65,6 +70,7 @@ public class SpotOnClientsPage implements ISpotOnClientsPage {
         return SpotOnPageFactory.getClientsPage();
     }
 
+    // Enter Contact Email
     @Override
     public ISpotOnClientsPage enterContactEmail(String contEmail) {
 
@@ -72,6 +78,7 @@ public class SpotOnClientsPage implements ISpotOnClientsPage {
         return SpotOnPageFactory.getClientsPage();
     }
 
+    // Enter Street Address
     @Override
     public ISpotOnClientsPage enterStreetAddress(String address) {
 
@@ -79,6 +86,7 @@ public class SpotOnClientsPage implements ISpotOnClientsPage {
         return SpotOnPageFactory.getClientsPage();
     }
 
+    // Enter City
     @Override
     public ISpotOnClientsPage enterCity(String cityValue) {
 
@@ -86,6 +94,7 @@ public class SpotOnClientsPage implements ISpotOnClientsPage {
         return SpotOnPageFactory.getClientsPage();
     }
 
+    // Select State
     @Override
     public ISpotOnClientsPage selectState() {
 
@@ -94,6 +103,7 @@ public class SpotOnClientsPage implements ISpotOnClientsPage {
         return SpotOnPageFactory.getClientsPage();
     }
 
+    // Click on Save Button
     @Override
     public ISpotOnClientsPage clickSaveBtn() {
 

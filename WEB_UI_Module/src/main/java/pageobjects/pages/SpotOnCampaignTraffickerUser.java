@@ -15,6 +15,7 @@ public class SpotOnCampaignTraffickerUser implements ISpotOnCampaignTraffickerUs
     SelenideElement campaignName = $x("//app-so-input[@label='Campaign Name']//ion-item");
     SelenideElement description = $x("//app-so-textarea[@label='Description']//ion-item");
 
+    // Verify whether the respective page is Campaign Page
     @Override
     public ISpotOnCampaignTraffickerUser verifyCampaignLabel() {
 
@@ -23,6 +24,7 @@ public class SpotOnCampaignTraffickerUser implements ISpotOnCampaignTraffickerUs
         return SpotOnPageFactory.getCampaignsPageTraffickerUser();
     }
 
+    // Select or open any Campaign
     @Override
     public ISpotOnCampaignTraffickerUser selectCampaignValue() {
 
@@ -30,6 +32,7 @@ public class SpotOnCampaignTraffickerUser implements ISpotOnCampaignTraffickerUs
         return SpotOnPageFactory.getCampaignsPageTraffickerUser();
     }
 
+    // Verify that Update Button is not present
     @Override
     public ISpotOnCampaignTraffickerUser verifyUpdateBtnNotPresent() {
 
@@ -39,6 +42,7 @@ public class SpotOnCampaignTraffickerUser implements ISpotOnCampaignTraffickerUs
         return SpotOnPageFactory.getCampaignsPageTraffickerUser();
     }
 
+    // Verify Campaign Name field is disabled
     @Override
     public ISpotOnCampaignTraffickerUser verifyCampaignNameDisabled() {
 
@@ -47,6 +51,7 @@ public class SpotOnCampaignTraffickerUser implements ISpotOnCampaignTraffickerUs
         return SpotOnPageFactory.getCampaignsPageTraffickerUser();
     }
 
+    // Verify Description field is disabled
     @Override
     public ISpotOnCampaignTraffickerUser verifyDescriptionDisabled() {
 

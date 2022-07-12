@@ -19,7 +19,7 @@ public class SpotOnUsersPage implements ISpotOnUsersPage {
     SelenideElement invite = $x("//button[text()=' Invite']");
 
 
-
+    // Verify whether the respective page is User Management
     @Override
     public ISpotOnUsersPage verifyUsersLabel() {
         String label = userManagementLabel.getText();
@@ -27,6 +27,7 @@ public class SpotOnUsersPage implements ISpotOnUsersPage {
         return SpotOnPageFactory.getUsersPage();
     }
 
+    // Click on Invite User Button
     @Override
     public ISpotOnUsersPage clickOnInviteUserBtn() {
 
@@ -34,6 +35,7 @@ public class SpotOnUsersPage implements ISpotOnUsersPage {
         return SpotOnPageFactory.getUsersPage();
     }
 
+    // Enter Email
     @Override
     public ISpotOnUsersPage enterEmail(String emailValue) {
 
@@ -41,6 +43,7 @@ public class SpotOnUsersPage implements ISpotOnUsersPage {
         return SpotOnPageFactory.getUsersPage();
     }
 
+    // Enter First Name
     @Override
     public ISpotOnUsersPage enterFirstName(String firstNameVal) {
 
@@ -48,6 +51,7 @@ public class SpotOnUsersPage implements ISpotOnUsersPage {
         return SpotOnPageFactory.getUsersPage();
     }
 
+    // Enter Last Name
     @Override
     public ISpotOnUsersPage enterLastName(String lastNameVal) {
 
@@ -55,6 +59,7 @@ public class SpotOnUsersPage implements ISpotOnUsersPage {
         return SpotOnPageFactory.getUsersPage();
     }
 
+    // Select Group
     @Override
     public ISpotOnUsersPage selectGroup() {
 
@@ -64,6 +69,7 @@ public class SpotOnUsersPage implements ISpotOnUsersPage {
         return SpotOnPageFactory.getUsersPage();
     }
 
+    // CLick on Invite Button
     @Override
     public ISpotOnUsersPage clickOnInviteBtn() {
 

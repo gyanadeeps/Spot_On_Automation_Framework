@@ -36,7 +36,7 @@ public class SpotOnEditPublisher implements ISpotOnEditPublisher {
     SelenideElement availability = $x("//tr[2]//ion-input[@formcontrolname='avails']/input");
     SelenideElement updateBtn = $x("//button[text()='Update ']");
 
-
+    // Check whether the respective page is Publisher Page
     @Override
     public ISpotOnEditPublisher verifyPublisherPage() {
 
@@ -45,6 +45,7 @@ public class SpotOnEditPublisher implements ISpotOnEditPublisher {
         return SpotOnPageFactory.getEditPublishersPage();
     }
 
+    // Enter Publisher Value in Search box
     @Override
     public ISpotOnEditPublisher enterSearchKeyword(String searchKey) {
 
@@ -54,6 +55,7 @@ public class SpotOnEditPublisher implements ISpotOnEditPublisher {
         return SpotOnPageFactory.getEditPublishersPage();
     }
 
+    // Click on Searched Proposal
     @Override
     public ISpotOnEditPublisher selectPublisher() {
 
@@ -61,6 +63,7 @@ public class SpotOnEditPublisher implements ISpotOnEditPublisher {
         return SpotOnPageFactory.getEditPublishersPage();
     }
 
+    // Click on Add New button
     @Override
     public ISpotOnEditPublisher clickAddNewBtn() {
 
@@ -80,6 +83,7 @@ public class SpotOnEditPublisher implements ISpotOnEditPublisher {
         return size - 1;
     }
 
+    // Enter Unit Name
     @Override
     public ISpotOnEditPublisher enterUnitName(String name) {
 
@@ -87,6 +91,7 @@ public class SpotOnEditPublisher implements ISpotOnEditPublisher {
         return SpotOnPageFactory.getEditPublishersPage();
     }
 
+    // Select Size
     @Override
     public ISpotOnEditPublisher selectSize(int index) {
         //System.out.println(index);
@@ -94,6 +99,7 @@ public class SpotOnEditPublisher implements ISpotOnEditPublisher {
         return SpotOnPageFactory.getEditPublishersPage();
     }
 
+    // Enter Placement value
     @Override
     public ISpotOnEditPublisher selectPlacement(int indexP) {
 
@@ -101,6 +107,7 @@ public class SpotOnEditPublisher implements ISpotOnEditPublisher {
         return SpotOnPageFactory.getEditPublishersPage();
     }
 
+    // Select Unit Price
     @Override
     public ISpotOnEditPublisher selectUnitPrice() {
 
@@ -109,6 +116,7 @@ public class SpotOnEditPublisher implements ISpotOnEditPublisher {
         return SpotOnPageFactory.getEditPublishersPage();
     }
 
+    // Enter Cost
     @Override
     public ISpotOnEditPublisher enterCost(String costValue) {
 
@@ -116,6 +124,7 @@ public class SpotOnEditPublisher implements ISpotOnEditPublisher {
         return SpotOnPageFactory.getEditPublishersPage();
     }
 
+    // Enter Availability value
     @Override
     public ISpotOnEditPublisher enterAvailability(String availValue) {
 
@@ -123,6 +132,7 @@ public class SpotOnEditPublisher implements ISpotOnEditPublisher {
         return SpotOnPageFactory.getEditPublishersPage();
     }
 
+    // Click on Update Button
     @Override
     public ISpotOnEditPublisher clickUpdateBtn() {
 

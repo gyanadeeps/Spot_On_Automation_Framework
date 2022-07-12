@@ -47,7 +47,7 @@ public class SpotOnActivityLogs implements ISpotOnActivityLogs {
     SelenideElement searchBtn = $x("//button[text()='Search']");
     SelenideElement email = $x("//tbody//tr[1]//td[3]");
 
-
+    // Check whether the respective page is Publisher Page
     @Override
     public ISpotOnActivityLogs verifyPublisherPage() {
 
@@ -56,6 +56,7 @@ public class SpotOnActivityLogs implements ISpotOnActivityLogs {
         return SpotOnPageFactory.verifyActivityLogs();
     }
 
+    // Click on New Publisher Button
     @Override
     public ISpotOnActivityLogs clickNewPublisherButton() {
 
@@ -64,6 +65,7 @@ public class SpotOnActivityLogs implements ISpotOnActivityLogs {
         return SpotOnPageFactory.verifyActivityLogs();
     }
 
+    // Enter Publisher Name
     @Override
     public ISpotOnActivityLogs enterPublisherName(String publisher) {
 
@@ -74,6 +76,7 @@ public class SpotOnActivityLogs implements ISpotOnActivityLogs {
         return SpotOnPageFactory.verifyActivityLogs();
     }
 
+    // Enter Website URL
     @Override
     public ISpotOnActivityLogs enterWebsiteURL(String webURL) {
 
@@ -81,6 +84,7 @@ public class SpotOnActivityLogs implements ISpotOnActivityLogs {
         return SpotOnPageFactory.verifyActivityLogs();
     }
 
+    // Enter Description
     @Override
     public ISpotOnActivityLogs enterDescription(String desc) {
 
@@ -88,6 +92,7 @@ public class SpotOnActivityLogs implements ISpotOnActivityLogs {
         return SpotOnPageFactory.verifyActivityLogs();
     }
 
+    // Select Publisher Type
     @Override
     public ISpotOnActivityLogs selectPublisherType() {
 
@@ -107,6 +112,7 @@ public class SpotOnActivityLogs implements ISpotOnActivityLogs {
         return SpotOnPageFactory.verifyActivityLogs();
     }
 
+    // Enter City
     @Override
     public ISpotOnActivityLogs enterCity(String cityName) {
 
@@ -114,15 +120,16 @@ public class SpotOnActivityLogs implements ISpotOnActivityLogs {
         return SpotOnPageFactory.verifyActivityLogs();
     }
 
+    // Select State
     @Override
     public ISpotOnActivityLogs selectState() {
 
         try {
 
             Selenide.executeJavaScript("arguments[0].click();", state);
-            Thread.sleep(5000);
+            Thread.sleep(4000);
             Selenide.executeJavaScript("arguments[0].click();", stateValue);
-            Thread.sleep(5000);
+            Thread.sleep(3000);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -130,6 +137,7 @@ public class SpotOnActivityLogs implements ISpotOnActivityLogs {
         return SpotOnPageFactory.verifyActivityLogs();
     }
 
+    // Enter Monthly Visitors
     @Override
     public ISpotOnActivityLogs enterMonthlyVisitors(String visitorsNumber) {
         //Selenide.executeJavaScript("arguments[0].sendKeys(visitorsNumber);",monthlyVisitors);
@@ -139,6 +147,7 @@ public class SpotOnActivityLogs implements ISpotOnActivityLogs {
         return SpotOnPageFactory.verifyActivityLogs();
     }
 
+    // Click Add New Button to add Inventory
     @Override
     public ISpotOnActivityLogs clickAddNewBtn() {
 
@@ -146,6 +155,7 @@ public class SpotOnActivityLogs implements ISpotOnActivityLogs {
         return SpotOnPageFactory.verifyActivityLogs();
     }
 
+    // Enter Ad Unit Name for Inventory
     @Override
     public ISpotOnActivityLogs enterUnitName(String name) {
 
@@ -153,6 +163,7 @@ public class SpotOnActivityLogs implements ISpotOnActivityLogs {
         return SpotOnPageFactory.verifyActivityLogs();
     }
 
+    // Select Size for Inventory
     @Override
     public ISpotOnActivityLogs selectSize(int index) {
         //System.out.println(index);
@@ -160,6 +171,7 @@ public class SpotOnActivityLogs implements ISpotOnActivityLogs {
         return SpotOnPageFactory.verifyActivityLogs();
     }
 
+    // Select Placement for Inventory
     @Override
     public ISpotOnActivityLogs selectPlacement(int indexP) {
 
@@ -167,6 +179,7 @@ public class SpotOnActivityLogs implements ISpotOnActivityLogs {
         return SpotOnPageFactory.verifyActivityLogs();
     }
 
+    // Select Unit Price for Inventory
     @Override
     public ISpotOnActivityLogs selectUnitPrice() {
 
@@ -175,6 +188,7 @@ public class SpotOnActivityLogs implements ISpotOnActivityLogs {
         return SpotOnPageFactory.verifyActivityLogs();
     }
 
+    // Enter Cost
     @Override
     public ISpotOnActivityLogs enterCost(String costValue) {
 
@@ -182,6 +196,7 @@ public class SpotOnActivityLogs implements ISpotOnActivityLogs {
         return SpotOnPageFactory.verifyActivityLogs();
     }
 
+    // Enter Availability
     @Override
     public ISpotOnActivityLogs enterAvailability(String availValue) {
 
@@ -189,6 +204,7 @@ public class SpotOnActivityLogs implements ISpotOnActivityLogs {
         return SpotOnPageFactory.verifyActivityLogs();
     }
 
+    // Click on Save Button
     @Override
     public ISpotOnActivityLogs clickSaveButton() {
 
@@ -205,6 +221,7 @@ public class SpotOnActivityLogs implements ISpotOnActivityLogs {
         return SpotOnPageFactory.verifyActivityLogs();
     }
 
+    // Click on Activity Logs Button
     @Override
     public ISpotOnActivityLogs clickActivityLogsBtn() {
 
@@ -212,6 +229,7 @@ public class SpotOnActivityLogs implements ISpotOnActivityLogs {
         return SpotOnPageFactory.verifyActivityLogs();
     }
 
+    // Verify whether the respective page is Activity Logs page
     @Override
     public ISpotOnActivityLogs verifyActivityLogs() {
 
@@ -221,6 +239,7 @@ public class SpotOnActivityLogs implements ISpotOnActivityLogs {
         return SpotOnPageFactory.verifyActivityLogs();
     }
 
+    // Enter Email
     @Override
     public ISpotOnActivityLogs enterEmail(String mail) {
 

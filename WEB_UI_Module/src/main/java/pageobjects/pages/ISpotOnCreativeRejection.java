@@ -6,5 +6,4 @@ public interface ISpotOnCreativeRejection {
     ISpotOnCreativeRejection enterSearchKeyword(String searchKey);
     ISpotOnCreativeRejection clickRejectBtn();
     ISpotOnCreativeRejection enterRejectionReason(String reason);
-    ISpotOnCreativeRejection clickSaveBtn();
 }
