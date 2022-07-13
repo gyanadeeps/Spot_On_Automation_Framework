@@ -4,26 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="097997cd-fcb9-4e89-8743-443c9de2d38b" name="Changes" comment="Test Case V5">
+    <list default="true" id="097997cd-fcb9-4e89-8743-443c9de2d38b" name="Changes" comment="Test Case V6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/Artifacts/TestNG_Custom_Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/Artifacts/TestNG_Custom_Report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/configAM.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/configAM.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/configPublisher.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/configPublisher.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/BaseClasses/BaseWebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/BaseClasses/BaseWebTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/ImplementationClasses/SpotOnCampaignCreationAccMgrImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/ImplementationClasses/SpotOnCampaignCreationAccMgrImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/ImplementationClasses/SpotOnCreateCampaignImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/ImplementationClasses/SpotOnCreateCampaignImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/ImplementationClasses/SpotOnCreativesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/ImplementationClasses/SpotOnCreativesImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/data/ApplicationData.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/data/ApplicationData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/data/SystemProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/data/SystemProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/engine/webdriver/ChromeDriverProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/engine/webdriver/ChromeDriverProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/PageFactoryClasses/SpotOnPageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/PageFactoryClasses/SpotOnPageFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/ISpotOnCreateCampaign.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/ISpotOnCreateCampaign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/ISpotOnSignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/ISpotOnSignInPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnCreateCampaign.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnCreateCampaign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnSignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnSignInPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnUsersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/SpotOnUsersPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/resources/CHROME.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/resources/CHROME.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/resources/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/BaseClasses/BaseWebTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/BaseClasses/BaseWebTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/CHROME.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/CHROME.xml" afterDir="false" />
@@ -146,7 +134,7 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/team9/IdeaProjects/Spot_On_Automation_Framework/WEB_UI_Module/src/main/resources/CHROME.xml">
+  <component name="RunManager" selected="TestNG.ActivityLogsValidation.verifyActivityLogs">
     <configuration name="ActivityLogsValidation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WEB_UI_Module" />
       <shortenClasspath name="NONE" />
@@ -175,6 +163,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ActivityLogsValidation.verifyActivityLogs" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WEB_UI_Module" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.ActivityLogs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test.ActivityLogs" />
+      <option name="MAIN_CLASS_NAME" value="test.ActivityLogs.ActivityLogsValidation" />
+      <option name="METHOD_NAME" value="verifyActivityLogs" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/team9/IdeaProjects/Spot_On_Automation_Framework/WEB_UI_Module/src/main/resources/CHROME.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WEB_UI_Module" />
       <shortenClasspath name="NONE" />
@@ -184,6 +201,34 @@
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EditProposalServiceUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WEB_UI_Module" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.ProposalsPage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test.ProposalsPage" />
+      <option name="MAIN_CLASS_NAME" value="test.ProposalsPage.EditProposalServiceUser" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
@@ -225,63 +270,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RejectCreative" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="WEB_UI_Module" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.CreativesPage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.CreativesPage" />
-      <option name="MAIN_CLASS_NAME" value="test.CreativesPage.RejectCreative" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RejectCreative.verifyCampaignCreationServiceUser" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="WEB_UI_Module" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.CreativesPage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.CreativesPage" />
-      <option name="MAIN_CLASS_NAME" value="test.CreativesPage.RejectCreative" />
-      <option name="METHOD_NAME" value="verifyCampaignCreationServiceUser" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG">
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -304,19 +292,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.C:/Users/team9/IdeaProjects/Spot_On_Automation_Framework/WEB_UI_Module/src/main/resources/CHROME.xml" />
-      <item itemvalue="TestNG.RejectCreative" />
-      <item itemvalue="TestNG.RejectCreative.verifyCampaignCreationServiceUser" />
-      <item itemvalue="TestNG.PublishersPageValidation" />
       <item itemvalue="TestNG.ActivityLogsValidation" />
+      <item itemvalue="TestNG.ActivityLogsValidation.verifyActivityLogs" />
+      <item itemvalue="TestNG.C:/Users/team9/IdeaProjects/Spot_On_Automation_Framework/WEB_UI_Module/src/main/resources/CHROME.xml" />
+      <item itemvalue="TestNG.EditProposalServiceUser" />
+      <item itemvalue="TestNG.PublishersPageValidation" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/team9/IdeaProjects/Spot_On_Automation_Framework/WEB_UI_Module/src/main/resources/CHROME.xml" />
+        <item itemvalue="TestNG.ActivityLogsValidation.verifyActivityLogs" />
+        <item itemvalue="TestNG.EditProposalServiceUser" />
         <item itemvalue="TestNG.ActivityLogsValidation" />
+        <item itemvalue="TestNG.C:/Users/team9/IdeaProjects/Spot_On_Automation_Framework/WEB_UI_Module/src/main/resources/CHROME.xml" />
         <item itemvalue="TestNG.PublishersPageValidation" />
-        <item itemvalue="TestNG.RejectCreative" />
-        <item itemvalue="TestNG.RejectCreative.verifyCampaignCreationServiceUser" />
       </list>
     </recent_temporary>
   </component>
@@ -328,69 +316,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627924201276</updated>
-    </task>
-    <task id="LOCAL-00088" summary="Mobile Test cases v7">
-      <created>1647504336744</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1647504336749</updated>
-    </task>
-    <task id="LOCAL-00089" summary="Mobile Test cases v8">
-      <created>1647671341721</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1647671341722</updated>
-    </task>
-    <task id="LOCAL-00090" summary="Mobile Test cases v9">
-      <created>1647675775313</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1647675775313</updated>
-    </task>
-    <task id="LOCAL-00091" summary="Mobile Test cases v10">
-      <created>1647882614410</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1647882614411</updated>
-    </task>
-    <task id="LOCAL-00092" summary="Mobile Test cases v11">
-      <created>1647884830875</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1647884830875</updated>
-    </task>
-    <task id="LOCAL-00093" summary="Mobile Test cases v12">
-      <created>1647887711125</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1647887711125</updated>
-    </task>
-    <task id="LOCAL-00094" summary="Mobile Test cases v13">
-      <created>1647966131508</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1647966131508</updated>
-    </task>
-    <task id="LOCAL-00095" summary="Web Test cases v14">
-      <created>1647969758121</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1647969758121</updated>
-    </task>
-    <task id="LOCAL-00096" summary="Web Test cases v15">
-      <created>1647970553973</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1647970553976</updated>
     </task>
     <task id="LOCAL-00097" summary="mobile Test cases v16">
       <created>1648030329030</created>
@@ -672,7 +597,70 @@
       <option name="project" value="LOCAL" />
       <updated>1656704652168</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="Test Case V5">
+      <created>1657044296286</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1657044296294</updated>
+    </task>
+    <task id="LOCAL-00138" summary="Test Case V5">
+      <created>1657044491382</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1657044491382</updated>
+    </task>
+    <task id="LOCAL-00139" summary="Test Case V5">
+      <created>1657044615972</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1657044615972</updated>
+    </task>
+    <task id="LOCAL-00140" summary="Test Case V5">
+      <created>1657045672339</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1657045672340</updated>
+    </task>
+    <task id="LOCAL-00141" summary="Test Case V5">
+      <created>1657129383475</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1657129383479</updated>
+    </task>
+    <task id="LOCAL-00142" summary="Test Case V5">
+      <created>1657130755451</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1657130755451</updated>
+    </task>
+    <task id="LOCAL-00143" summary="Test Case V5">
+      <created>1657131958454</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1657131958454</updated>
+    </task>
+    <task id="LOCAL-00144" summary="Test Case V5">
+      <created>1657638917666</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1657638917667</updated>
+    </task>
+    <task id="LOCAL-00145" summary="Test Case V6">
+      <created>1657650728218</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1657650728218</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -690,7 +678,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/MyNavidGaid_automation" />
     </ignored-roots>
-    <MESSAGE value="Mobile Test cases v8" />
     <MESSAGE value="Mobile Test cases v9" />
     <MESSAGE value="Mobile Test cases v10" />
     <MESSAGE value="Mobile Test cases v11" />
@@ -715,7 +702,8 @@
     <MESSAGE value="Test Case V3" />
     <MESSAGE value="Test Case V4" />
     <MESSAGE value="Test Case V5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Case V5" />
+    <MESSAGE value="Test Case V6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test Case V6" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/README_md$C__Users_team2_IdeaProjects_Web_API_Mobile_framework_WEB_UI_Module_src_main_resources_CHROME_xml.ic" NAME="$PROJECT_DIR$/../../../team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/CHROME.xml Coverage Results" MODIFIED="1654425684734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
