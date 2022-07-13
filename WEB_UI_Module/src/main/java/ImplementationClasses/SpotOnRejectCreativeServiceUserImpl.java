@@ -26,8 +26,7 @@ public class SpotOnRejectCreativeServiceUserImpl extends SpotOnLoginPage impleme
                     .verifyCreativesPublisherPage()
                     .enterSearchKeyword(ad.SEARCH_KEY_CREATIVES())
                     .clickRejectBtn()
-                    .enterRejectionReason(ad.REJECTION_REASON())
-                    .clickSaveBtn();
+                    .enterRejectionReason(ad.REJECTION_REASON());
         } catch (Exception exception) {
             exception.printStackTrace();
         }
