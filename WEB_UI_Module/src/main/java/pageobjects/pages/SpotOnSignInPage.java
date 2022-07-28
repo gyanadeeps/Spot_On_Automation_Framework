@@ -176,4 +176,50 @@ public class SpotOnSignInPage implements ISpotOnSignInPage
         proposals.click();
         return SpotOnPageFactory.verifyEditProposalServiceUser();
     }
+
+    // Click on Proposals Button
+    @Override
+    public ISpotOnSearchValidationProposals clickProposalsBtn() {
+        proposals.click();
+        return SpotOnPageFactory.verifySearchValidationProposals();
+    }
+
+    // Click on Publishers Button
+    @Override
+    public ISpotOnSearchValidationPublishers clickPublisherButton() {
+        publishers.click();
+        return SpotOnPageFactory.verifySearchValidationPublishers();
+    }
+
+    // Click on Campaigns Button
+    @Override
+    public ISpotOnSearchValidationCampaign clickCampaignBtn() {
+
+        campaigns.click();
+        return SpotOnPageFactory.verifySearchValidationCampaign();
+    }
+
+    // Click on Creatives Button
+    @Override
+    public ISpotOnSearchValidationCreatives clickCreativeBtn() {
+
+        creatives.click();
+        return SpotOnPageFactory.verifySearchValidationCreatives();
+    }
+
+    // Click on Creatives(Publisher) Button
+    @Override
+    public ISpotOnSearchValidationCreativesPublisher clickCreativePublisherBtn() {
+
+        creativesPublisher.click();
+        return SpotOnPageFactory.verifySearchValidationCreativesPublisher();
+    }
+
+    // Click on Clients Button
+    @Override
+    public ISpotOnSearchValidationClients clickClientsBtn() {
+
+        clients.click();
+        return SpotOnPageFactory.verifySearchValidationClients();
+    }
 }

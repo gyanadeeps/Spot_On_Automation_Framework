@@ -96,4 +96,34 @@ public class SpotOnPageFactory extends PageFactory
         return wrap(new SpotOnEditProposal(), ISpotOnEditProposal.class);
     }
 
+    public static ISpotOnSearchValidationProposals verifySearchValidationProposals()
+    {
+        return wrap(new SpotOnSearchValidationProposals(), ISpotOnSearchValidationProposals.class);
+    }
+
+    public static ISpotOnSearchValidationPublishers verifySearchValidationPublishers()
+    {
+        return wrap(new SpotOnSearchValidationPublishers(), ISpotOnSearchValidationPublishers.class);
+    }
+
+    public static ISpotOnSearchValidationCampaign verifySearchValidationCampaign()
+    {
+        return wrap(new SpotOnSearchValidationCampaign(), ISpotOnSearchValidationCampaign.class);
+    }
+
+    public static ISpotOnSearchValidationCreatives verifySearchValidationCreatives()
+    {
+        return wrap(new SpotOnSearchValidationCreatives(), ISpotOnSearchValidationCreatives.class);
+    }
+
+    public static ISpotOnSearchValidationCreativesPublisher verifySearchValidationCreativesPublisher()
+    {
+        return wrap(new SpotOnSearchValidationCreativesPublisher(), ISpotOnSearchValidationCreativesPublisher.class);
+    }
+
+    public static ISpotOnSearchValidationClients verifySearchValidationClients()
+    {
+        return wrap(new SpotOnSearchValidationClients(), ISpotOnSearchValidationClients.class);
+    }
+
 }

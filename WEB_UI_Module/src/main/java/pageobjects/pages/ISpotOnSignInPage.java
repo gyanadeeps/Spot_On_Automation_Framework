@@ -22,5 +22,11 @@ public interface ISpotOnSignInPage
   ISpotOnCreativeRejection clickOnCreativeBtn();
   ISpotOnActivityLogs clickOnPublisherButton();
   ISpotOnEditProposal clickOnProposalBtnEditServiceUser();
+  ISpotOnSearchValidationProposals clickProposalsBtn();
+  ISpotOnSearchValidationPublishers clickPublisherButton();
+  ISpotOnSearchValidationCampaign clickCampaignBtn();
+  ISpotOnSearchValidationCreatives clickCreativeBtn();
+  ISpotOnSearchValidationCreativesPublisher clickCreativePublisherBtn();
+  ISpotOnSearchValidationClients clickClientsBtn();
 
 }

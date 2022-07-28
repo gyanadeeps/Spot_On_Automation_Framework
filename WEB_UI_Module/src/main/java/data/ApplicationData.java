@@ -313,6 +313,10 @@ public class ApplicationData {
         return placement;
     }
 
+    public String SEARCH_VALIDATION_KEY() {
+        String searchValidationKey = "spot";
+        return searchValidationKey;
+    }
 
 }
 

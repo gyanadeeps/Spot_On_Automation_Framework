@@ -183,5 +183,41 @@
         </classes>
     </test>
 
+    <test name="Search Validation for Campaigns Page">
+        <classes>
+            <class name="test.SearchValidation.SearchValidationCampaignsPage"/>
+        </classes>
+    </test>
+
+    <test name="Search Validation for Clients Page">
+        <classes>
+            <class name="test.SearchValidation.SearchValidationClientsPage"/>
+        </classes>
+    </test>
+
+    <test name="Search Validation for Creatives Page">
+        <classes>
+            <class name="test.SearchValidation.SearchValidationCreativesPage"/>
+        </classes>
+    </test>
+
+    <test name="Search Validation for Creatives(Publisher) Page">
+        <classes>
+            <class name="test.SearchValidation.SearchValidationCreativesPublisherPage"/>
+        </classes>
+    </test>
+
+    <test name="Search Validation for Proposals Page">
+        <classes>
+            <class name="test.SearchValidation.SearchValidationProposalsPage"/>
+        </classes>
+    </test>
+
+    <test name="Search Validation for Publishers Page">
+        <classes>
+            <class name="test.SearchValidation.SearchValidationPublishersPage"/>
+        </classes>
+    </test>
+
 
 </suite> <!-- Suite -->
